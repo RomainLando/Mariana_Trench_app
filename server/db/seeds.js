@@ -28,8 +28,8 @@ db.trench_elements.insertMany({
   zone3: [
     {
       title: "Deepest Submarine Cable",
-      detailImg: "src",
-      facts: "string",
+      detailImg: "public/imgs/sapei.png",
+      facts: "SAPEI, is a high-voltage d/c power transmission cable that connects Sardinia with the Italian mainland. The submarine cable runs at 1,600 metres (5,200 ft) below sea level in the Tyrrhenian Sea. It is the deepest submarine power cable in the world.[",
     },
     {
       title: "Depth of Titanic Shipwreck",
