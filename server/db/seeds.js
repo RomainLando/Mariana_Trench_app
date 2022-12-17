@@ -87,8 +87,8 @@ db.questions.insertMany([
   {
     zone1: [
       {
-        question: "This is a zone 1 question?",
-        answer: "This is a zone 1 answer.",
+        question: "What is the name of the railway tunnel that links Britain and France?",
+        answer: "The Channel Tunnel",
       },
     ],
   },
@@ -96,8 +96,8 @@ db.questions.insertMany([
   {
     zone2: [
       {
-        question: "This is a zone 2 question?",
-        answer: "This is a zone 2 answer.",
+        question: "In what sea was the deepest scuba dive ever completed",
+        answer: "The Red Sea",
       },
     ],
   },
@@ -105,8 +105,12 @@ db.questions.insertMany([
   {
     zone3: [
       {
-        question: "This is a zone 3 question?",
-        answer: "This is a zone 3 answer.",
+        question: "The deepest submarine power cable in the world connects Italy with which island?",
+        answer: "Sardinia",
+      },
+      {
+        question: "What year did the Titanic Sink?",
+        answer: "1912",
       },
     ],
   },
@@ -114,8 +118,8 @@ db.questions.insertMany([
   {
     zone4: [
       {
-        question: "This is a zone 4 question?",
-        answer: "This is a zone 4 answer.",
+        question: "A can of what was found almost 5km down in the Mariana Trench",
+        answer: "SPAM",
       },
     ],
   },
@@ -123,8 +127,12 @@ db.questions.insertMany([
   {
     zone5: [
       {
-        question: "This is a zone 5 question?",
-        answer: "This is a zone 5 answer.",
+        question: "What is the name of the deepest shipwreck ever discovered?",
+        answer: "U.S.S Samuel B Roberts",
+      },
+      {
+        question: "What is the name of the deepest point in the Mariana Trench?",
+        answer: "The Challenger Deep",
       },
     ],
   },
