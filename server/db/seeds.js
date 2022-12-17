@@ -33,16 +33,16 @@ db.trench_elements.insertMany({
     },
     {
       title: "Depth of Titanic Shipwreck",
-      detailImg: "src",
-      facts: "string",
+      detailImg: "public/imgs/titanic.jpeg",
+      facts: "Titanic was a luxury british steamship that sank after striking an iceberg on April 15th 1912.  Over 1500 people lost their lives in the ship which was described as 'unsinkable' before it left port. The wreck lies 3800m down, in the middle of the North Atlantic. The sinking has inspired many films and books, including director James' Cameron's 1997 film 'Titanic' which won 11 oscars, and was the first film ever to earn over a billion dollars at the box office.  Cameron would later go onto explore the Mariana Trench himself, becoming the third person to reach the very bottom.",
     },
   ],
   // Zone 4 - Abyssopelagic Zone  (4 000 metres to 6 000 metres)
   zone4: [
     {
-      title: "Container of Spam",
-      detailImg: "src",
-      facts: "string",
+      title: "Tin of Spam",
+      detailImg: "public/imgs/spam.png",
+      facts: "Even in the remotest parts of the ocean, humanity's impact is observable. An almost completely intact can of luncheon meat from 2001 was spotted 4947m down in the Sirena Deep part of the Mariana Trench. ",
     },
   ],
   // Zone 5 - Hadalpelagic Zone (The Trenches)
