@@ -4,7 +4,7 @@
 // Zone 4 - Abyssopelagic Zone  (4 000 metres to 6 000 metres)
 // Zone 5 - Hadalpelagic Zone (The Trenches)
 
-// use trench_explorer
+use trench_explorer
 db.dropDatabase();
 db.trench_elements.insertMany([
   // Zone 1 - Epipelagic Zone  (down to 200 m)
@@ -75,7 +75,8 @@ db.trench_elements.insertMany([
       {
         title: "Trieste",
         detailImg: "public/imgs/trieste.jpeg",
-        facts: "The Trieste was the first crewed vessel to reach the deepest point in the Mariana Trench - the Challenger Deep - at 10 994m down.  On 23rd Jan 1960, Jacques Piccard boarded the research submarine designed by his father, and with his fellow explorer  Don Walsh, they became the very first to reach the bottom.  It took nearly 5 hours to get to the bottom and it was a bumpy ride - at 9km down, one of the outer windows cracked and shook the entire submarine!",
+        facts:
+          "The Trieste was the first crewed vessel to reach the deepest point in the Mariana Trench - the Challenger Deep - at 10 994m down.  On 23rd Jan 1960, Jacques Piccard boarded the research submarine designed by his father, and with his fellow explorer  Don Walsh, they became the very first to reach the bottom.  It took nearly 5 hours to get to the bottom and it was a bumpy ride - at 9km down, one of the outer windows cracked and shook the entire submarine!",
       },
     ],
   },
