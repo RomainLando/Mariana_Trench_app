@@ -4,20 +4,19 @@
 // Zone 4 - Abyssopelagic Zone  (4 000 metres to 6 000 metres)
 // Zone 5 - Hadalpelagic Zone (The Trenches)
 
-use trench_explorer
+// use trench_explorer
 db.dropDatabase();
 db.trench_elements.insertMany([
+  // Zone 1 - Epipelagic Zone  (down to 200 m)
   {
-    zone1:
-      // Zone 1 - Epipelagic Zone  (down to 200 m)
-      [
-        {
-          title: "Depth of the Eurotunnel",
-          detailImg: "public/imgs/channel_tunnel.jpeg",
-          facts:
-            "The Channel Tunnel, also known as the Chunnel, is a 50.46-kilometre railway tunnel beneath the English Channel, linking Great Britain and the European mainland.  At its deepest, the tunnel is 75 metres (246 feet) below the sea level. That's the same as 107 baguettes balancing on top of each other.",
-        },
-      ],
+    zone1: [
+      {
+        title: "Depth of the Eurotunnel",
+        detailImg: "public/imgs/channel_tunnel.jpeg",
+        facts:
+          "The Channel Tunnel, also known as the Chunnel, is a 50.46-kilometre railway tunnel beneath the English Channel, linking Great Britain and the European mainland.  At its deepest, the tunnel is 75 metres (246 feet) below the sea level. That's the same as 107 baguettes balancing on top of each other.",
+      },
+    ],
   },
   // Zone 2 - Mesopelagic Zone (200 metres to 1000 metres)
   {
@@ -63,34 +62,34 @@ db.trench_elements.insertMany([
     zone5: [
       {
         title: "Deepest Ever Shipwreck",
-        detailImg: "src",
+        detailImg: "public/imgs/sammy_roberts.jpeg",
         facts:
           "The U.S.S Samuel B Roberts is the deepest shipwreck ever discovered, lying below the surface of the Philippine Sea at 6865m - that's the same as 20 Eiffel Towers stacked on top of each other!  The warship was sunk at the largest naval battle in history, the Battle of Leyte Gulf, fought between the US and Japanese Navies at the end of World War 2.  It was sunk by the Imperial Japanese Ship Yamato, the largest battleship ever built",
       },
       {
-        title: "Plastic Waste",
-        detailImg: "src",
-        facts: "string",
+        title: "Plastic Waste and Pollution",
+        detailImg: "public/imgs/plastic_waste.jpeg",
+        facts:
+          "Expeditions have discovered pollution even at the very bottom of the trench.  Litter such as Plastic bags, sweet wrappers, a plastic bucket and even a helium balloon from the film 'Frozen' have been discovered below 10,000m, in the deepest part, of the deepest part of the world.  Toxic chemicals banned in the 1970s which will never break down in the environment, and even elements left over from Nuclear Bomb testing have been found in crustaceans and other wildlife at the bottom ",
       },
       {
         title: "Trieste",
-        detailImg: "src",
-        facts: "string",
+        detailImg: "public/imgs/trieste.jpeg",
+        facts: "The Trieste was the first crewed vessel to reach the deepest point in the Mariana Trench - the Challenger Deep - at 10 994m down.  On 23rd Jan 1960, Jacques Piccard boarded the research submarine designed by his father, and with his fellow explorer  Don Walsh, they became the very first to reach the bottom.  It took nearly 5 hours to get to the bottom and it was a bumpy ride - at 9km down, one of the outer windows cracked and shook the entire submarine!",
       },
     ],
   },
 ]);
 
 db.questions.insertMany([
+  // Zone 1 - Epipelagic Zone  (down to 200 m)
   {
-    zone1:
-      // Zone 1 - Epipelagic Zone  (down to 200 m)
-      [
-        {
-          question: "This is a zone 1 question?",
-          answer: "This is a zone 1 answer.",
-        },
-      ],
+    zone1: [
+      {
+        question: "This is a zone 1 question?",
+        answer: "This is a zone 1 answer.",
+      },
+    ],
   },
   // Zone 2 - Mesopelagic Zone (200 metres to 1000 metres)
   {
