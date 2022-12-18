@@ -3,8 +3,8 @@ import MainContainer from './containers/MainContainer';
 
 function App() {
   return (
-    <div id='background'>
-        <MainContainer />
+    <div>
+      <MainContainer />
     </div>
   );
 }
