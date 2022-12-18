@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Leaderboard from '../components/leaderboard/Leaderboard'
 import MainMenu from '../components/MainMenu'
-import MenuNavComponents from '../components/NavBar'
+import NavBar from '../components/NavBar'
 import PlayerInfoForm from '../components/PlayerInfoForm'
 import Quiz from '../components/quiz/Quiz'
 import Zone1 from '../components/zones/Zone1'
@@ -16,7 +16,7 @@ export default function MainContainer() {
   return (
     <div>
       <Router>
-        <MenuNavComponents/>
+        <NavBar/>
         <Routes>
 
           <Route path="/" element={ <MainMenu/> } />
