@@ -1,62 +1,85 @@
-body {
-  overflow: hidden;
+
+
+html {
+    background-color: aliceblue
 }
 
-.wave {
-  position: absolute;
-  overflow: hidden;
-  max-width: 100%;
-  height: auto;
-  animation-timing-function: linear;
-  animation-name: wave1;
-  animation-iteration-count: infinite;
+*{
+	margin:0;
+	padding:0;
+    /* position: relative; */
 }
-@keyframes wave1 {
-    0% {
-      left: -5%;
-    }
-    50% {
-      left: 5%;
-    }
-    100% {
-      left: -5%;
-    }
-  }
-  
 
+#sub1 {
+    position: absolute;
+    top:70vh;
+    left: 50vw;
+    right: 50vw;
+    max-width: 20vw;
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+@keyframes ani{
+	0%{background-position: 0 0;}
+	100%{background-position: 100vw 0;}
+}
 #wave1 {
-  top: 70%;
-  animation-duration: 5s;
-
+	background:url('../../public/media/wave1.png') repeat-x 0 / 100% auto;
+	height: 86px;
+	animation: ani 10s linear infinite ;
+	padding-left: 50vw;
+    padding-right: 50vw;
+    position: absolute;
+    left: 0;
+    top: 88vh;
+    z-index: 3;
+    margin-bottom: 0;
+    overflow: hidden;
+    padding-bottom: 0;
 }
-
-
-
 
 #wave2 {
-  /* position: absolute; */
-  top: 75%;
-  animation-duration: 8s;
-
-  /* animation: 30s linear 1s infinite running ripple1; */
+	background:url('../../public/media/wave2.png') repeat-x 0 / 100% auto;
+	padding-left: 50vw;
+    padding-right: 50vw;
+    height:86px;
+	animation: ani 8s linear infinite ;
+    position: absolute;
+    right: 0;
+    top: 90vh;
+    z-index: 4;
+    overflow: hidden;
 }
 
 #wave3 {
-  /* position: absolute; */
-  top: 80%;
-  animation-duration: 10s;
-  /* animation: 30s linear 1s infinite running ripple1; */
+	background:url('../../public/media/wave3.png') repeat-x 0 / 100% auto;
+	padding-left: 50vw;
+    padding-right: 50vw;
+    height:86px;
+	animation: ani 12s linear infinite ;
+    position: absolute;
+    right: 0;
+    top: 86vh;
+    z-index: 2;
+    overflow: hidden;
 }
 
 #wave4 {
-  /* position: absolute; */
-  top: 85%;
-  animation-duration: 12s;
-  /* animation: 30s linear 1s infinite running ripple1; */
+	background:url('../../public/media/wave4.png') repeat-x 0 / 100% auto;
+	padding-left: 50vw;
+    padding-right: 50vw;
+    height:86px;
+	animation: ani 14s linear infinite ;
+    position: absolute;
+    right: 0;
+    top: 84vh;
+    z-index: 1;
+    overflow: hidden;
 }
 
-#wave5 {
-  /* position: absolute; */
-  top: 90%;
-  /* animation: 30s linear 1s infinite running ripple1; */
-}
+/* #footer {
+    background-color: #00405B;
+    padding: 10rem;
+} */

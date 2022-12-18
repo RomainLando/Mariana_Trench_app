@@ -13,13 +13,14 @@ export default function MainMenu() {
             <PlayerInfoForm/>
             <Link to ="/zone1" ><button>Lets explore!</button></Link>
         </div>
-        <div className='waveContainer'>
-        <img id='wave1' className='wave' src='./media/wave1_4.png'></img>
-        <img id='wave2' className='wave' src='./media/wave1_3.png'></img>
-        <img id='wave3' className='wave' src='./media/wave1_2.png'></img>
-        <img id='wave4' className='wave' src='./media/wave1_1.png'></img>
-        {/* <img id='wave5' className='wave' src='./media/wave5.png'></img> */}
-        </div>
+        <img id='sub1' src='./media/submarine.png' ></img>
+        <section id="wavewrapper">
+        <div id="wave1"></div>
+        <div id="wave2"></div>
+        <div id="wave3"></div>
+        <div id="wave4"></div>
+        </section>
+        <div id="footer"></div>
         </>
     )
 }
