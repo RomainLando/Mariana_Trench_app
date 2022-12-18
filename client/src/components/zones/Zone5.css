@@ -1,0 +1,36 @@
+.background5 {
+    background-color: #03989E;
+   
+  
+  }
+  
+  .background5 {
+    background-image: url('../../media/zone5bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    
+  }
+  
+  #sub {
+    position: fixed;
+    top: 45%;
+    right: 10%;
+    width: 300px;
+    z-index: 2;
+  }
+  
+  
+  
+  #zone-title {
+    text-align: center;
+    font-size: 40px;
+    color: #a9b31f;
+    padding-top: 10%;
+    margin: 0;
+  }
+  
+  
+  

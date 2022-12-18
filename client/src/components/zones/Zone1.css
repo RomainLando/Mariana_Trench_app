@@ -5,24 +5,26 @@
 }
 
 .background1 {
-  background-image: url('../../media/Level1_v2.png');
+  background-image: url('../../media/zone1bg.png');
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
-  width: 100vw;
+  /* height: 100vh; */
+  /* width: 100vw; */
 }
 
 #sub {
   position: fixed;
   top: 45%;
   right: 10%;
-  width: 300px;
+  width: 150px;
   z-index: 2;
 }
 
 
 .ripple {
   position: absolute;
-  width: 300px;
+  /* width: 150px; */
   opacity: 33%;
   z-index: 1;
 
@@ -108,6 +110,7 @@
   font-size: 40px;
   color: #a9b31f;
   padding-top: 10%;
+  margin: 0;
 }
 
 
