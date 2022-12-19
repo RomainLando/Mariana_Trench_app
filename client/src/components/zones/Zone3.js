@@ -103,6 +103,8 @@ export default function Zone3() {
             <InfoDisplayPopUp content={data[2]} handleClose={togglePopup3} />
           )}
         </div>
+        {/* Ewan above */}
+        {/* Gintare Below */}
         <div>
           <input type="button" value="Element4" onClick={togglePopup4} />
           {isOpen4 && (

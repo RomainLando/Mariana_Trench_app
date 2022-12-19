@@ -77,7 +77,9 @@ export default function Zone1 () {
         )}
       </div>
       <div>
-        <input type="button" value="Element1" onClick={togglePopup1} />
+        <button className="element" onClick={togglePopup1}>
+        <img className="element_img" src="../../media/icons/channel_tunnel_icon.png"></img>
+        </button>
         {isOpen1 && (
           <InfoDisplayPopUp content={data[0]} handleClose={togglePopup1} />
         )}
