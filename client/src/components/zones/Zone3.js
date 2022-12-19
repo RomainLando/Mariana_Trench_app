@@ -4,6 +4,7 @@ import './Zone3.css'
 import TrenchServices from '../../services/TrenchServices';
 import InfoDisplayPopUp from "../InfoDisplayPopup";
 import StaticInfoDisplayPopUp from "../StaticInfoDisplayPopup";
+import sub from "../../media/submarine.png"
 
 export default function Zone3() {
 
@@ -121,7 +122,7 @@ export default function Zone3() {
             <InfoDisplayPopUp content={data[5]} handleClose={togglePopup6} />
           )}
         </div>
-      <img className='sub' src='./media/submarine.png' ></img>
+      <img className='sub' src={sub} ></img>
         {/* <img id='ripple1' className='ripple' src='./media/underwater_ripple.png'></img>
         <img id='ripple2' className='ripple' src='./media/underwater_ripple.png'></img>
         <img id='ripple3' className='ripple' src='./media/underwater_ripple.png'></img>
