@@ -1,7 +1,5 @@
 
 import React from 'react'
-
-import UpDownButtons from '../UpDownButtons'
 import './Zone2.css'
 import {useState, useEffect} from 'react';
 

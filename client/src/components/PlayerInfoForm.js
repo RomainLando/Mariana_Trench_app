@@ -10,7 +10,7 @@ import React from 'react'
 export default function PlayerInfoForm() {
     return (
         <div>
-            <form> 
+            <form>
                 <h4>Ready to explore?</h4>
                 <div className="player">
                     <label htmlFor="name">What is your name?</label>
@@ -21,29 +21,28 @@ export default function PlayerInfoForm() {
 
                         // value={name}
                         required
-                        // onChange={handlePlayerNameChange}
-
+                    // onChange={handlePlayerNameChange}
                     />
                 </div>
                 <div className="player">
                     <label htmlFor="height">How tall are you?</label>
                     <input
-                        type="number"
-                        id="height"
-                        name="height"
-                        placeholder='meters [m]'
+                        type = "number"
+                        id = "height"
+                        name = "height"
+                        placeholder = 'meters [m]'
                         // value={height}
                         required
-                        // onChange={handlePlayerHeightChange}
+                    // onChange={handlePlayerHeightChange}
                     />
-                    
-                 
+
+
                 </div>
 
 
                 <input type="submit" name="submit" value="Submit" />
             </form>
-            
+
         </div>
     )
 }
