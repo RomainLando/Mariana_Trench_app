@@ -85,9 +85,12 @@ export default function Zone5() {
             <InfoDisplayPopUp
               content={
                 <>
-                  <b>This is where the title will go</b>
+                  <img src={data[0].detailImg}/>
+                  <br></br>
+                  <h2>{data[0].title}</h2>
+                  <br></br>
                   <p>
-                    This is where the details will go for Element1!
+                  {data[0].facts}
                   </p>
                 </>
               }
@@ -105,9 +108,12 @@ export default function Zone5() {
             <InfoDisplayPopUp
               content={
                 <>
-                  <b>This is where the title will go</b>
+                  <img src={data[1].detailImg}/>
+                  <br></br>
+                  <h2>{data[1].title}</h2>
+                  <br></br>
                   <p>
-                    This is where the details will go for Element2!
+                  {data[1].facts}
                   </p>
                 </>
               }
@@ -125,9 +131,12 @@ export default function Zone5() {
             <InfoDisplayPopUp
               content={
                 <>
-                  <b>This is where the title will go</b>
+                  <img src={data[2].detailImg}/>
+                  <br></br>
+                  <h2>{data[2].title}</h2>
+                  <br></br>
                   <p>
-                    This is where the details will go for Element3!
+                  {data[2].facts}
                   </p>
                 </>
               }
@@ -145,9 +154,12 @@ export default function Zone5() {
             <InfoDisplayPopUp
               content={
                 <>
-                  <b>This is where the title will go</b>
+                  <img src={data[3].detailImg}/>
+                  <br></br>
+                  <h2>{data[3].title}</h2>
+                  <br></br>
                   <p>
-                    This is where the details will go for Element4!
+                  {data[3].facts}
                   </p>
                 </>
               }
@@ -165,9 +177,12 @@ export default function Zone5() {
             <InfoDisplayPopUp
               content={
                 <>
-                  <b>This is where the title will go</b>
+                  <img src={data[4].detailImg}/>
+                  <br></br>
+                  <h2>{data[4].title}</h2>
+                  <br></br>
                   <p>
-                    This is where the details will go for Element5!
+                  {data[4].facts}
                   </p>
                 </>
               }
