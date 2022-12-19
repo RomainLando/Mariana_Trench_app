@@ -16,12 +16,12 @@ export default function Quiz() {
   }, []);
 
   // const zone1Questions = questions[0].zone1[0].question
-  console.log("Questions:", questions);
+
 
   return (
     <div>
       <h4>Quiz</h4>
-     { !questions.length ? <QuizList questions = {questions} /> : null}
+      <QuizList questions = {questions} /> 
     </div>
 
   )
