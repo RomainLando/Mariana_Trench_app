@@ -5,11 +5,7 @@ import { Link } from 'react-router-dom'
 import TrenchServices from '../../services/TrenchServices';
 
 export default function Zone1 () {
-  const [data, setData] = useState([]);
-  useEffect (() => {
-    TrenchServices.getTrench()
-    .then (info => setData(info))
-  }, []);
+  
 
   return (
   
