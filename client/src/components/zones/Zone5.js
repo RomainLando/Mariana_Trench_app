@@ -4,6 +4,7 @@ import "./Zone5.css";
 import TrenchServices from "../../services/TrenchServices";
 import InfoDisplayPopUp from "../InfoDisplayPopup";
 import StaticInfoDisplayPopUp from "../StaticInfoDisplayPopup";
+import sub from "../../media/submarine.png"
 
 export default function Zone5() {
   
@@ -134,7 +135,7 @@ export default function Zone5() {
             <InfoDisplayPopUp content={data[6]} handleClose={togglePopup7} />
           )}
         </div>
-        <img className="sub" src="./media/submarine.png"></img>
+        <img className="sub" src={sub}></img>
       </div>
     </>
   );

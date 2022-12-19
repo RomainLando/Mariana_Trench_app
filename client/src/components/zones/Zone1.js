@@ -4,6 +4,7 @@ import './Zone1.css'
 import TrenchServices from '../../services/TrenchServices';
 import InfoDisplayPopUp from "../InfoDisplayPopup";
 import StaticInfoDisplayPopUp from "../StaticInfoDisplayPopup";
+import sub from "../../media/submarine.png"
 
 export default function Zone1 () {
   const [isOpen0, setIsOpen0] = useState(true);
@@ -108,7 +109,7 @@ export default function Zone1 () {
           <InfoDisplayPopUp content={data[4]} handleClose={togglePopup5} />
         )}
       </div>
-        <img className='sub' src='./media/submarine.png' ></img>
+        <img className='sub' src={sub} ></img>
         {/* <img id='ripple1' className='ripple' src='../../media/underwater_ripple.png'></img>
         <img id='ripple4' className='ripple' src='../../media/underwater_ripple.png'></img>  */}
     </div>

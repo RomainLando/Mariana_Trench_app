@@ -16,12 +16,18 @@ body {
 }
 
 #sub1 {
+    
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top:70vh;
+    right: 40vw;
+    top: 75vh;
+    z-index: 3;
+    /* top:70vh;
     left: 50vw;
-    right: 50vw;
+    right: 50vw; */
     max-width: 20vw;
-    z-index: 2;
+    z-index: 3;
     overflow: hidden;
 }
 
@@ -49,7 +55,7 @@ body {
 	background:url('../media/wave2.png') repeat-x 0 / 100% auto;
 	padding-left: 50vw;
     padding-right: 50vw;
-    height:86px;
+    height:120px;
 	animation: ani 8s linear infinite ;
     position: absolute;
     right: 0;

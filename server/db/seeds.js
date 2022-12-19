@@ -205,6 +205,12 @@ db.trench_elements.insertMany([
 db.questions.insertMany([
       {
         question: "What is the name of the railway tunnel that links Britain and France?",
+        answerOptions: [ 
+          {option: "The Channel Tunnel", isTrue: true},
+          {option: "The Brexit Hole", isTrue: false},
+          {option: "The Silk Road", isTrue: false},
+          {option: "The Bucket and Shovel Express", isTrue: false}
+         ],
         answer: "The Channel Tunnel",
         options: ["The Channel Tunnel", "The Brexit Hole", "The Silk Road", "The Bucket and Shovel"]
         
@@ -212,8 +218,71 @@ db.questions.insertMany([
       
       {
         question: "In what sea was the deepest scuba dive ever completed",
+        answerOptions: [ 
+          {option: "The Red Sea", isTrue: true},
+          {option: "The Irish Sea", isTrue: false},
+          {option: "Loch Ness", isTrue: false},
+          {option: "My Bath Tub", isTrue: false}
+         ],
         answer: "The Red Sea",
         options: ["The Red Sea", "The Irish Sea", "Loch Ness", "My Bath Tub"]
+      },
+      {
+        
+        question: "The deepest submarine power cable in the world connects Italy with which island?",
+        answerOptions: [ 
+          {option: "Sardinia", isTrue: true},
+          {option: "Sicily", isTrue: false},
+          {option: "Cyprus", isTrue: false},
+          {option: "UK", isTrue: false}
+         ],
+        answer: "Sardinia",
+        options: ["Sardina", "Sicily", "Cyprus", "UK"]
+        
+      },
+      {
+        question: "What year did the Titanic sink?",
+        answerOptions: [ 
+          {option: "1912", isTrue: true},
+          {option: "1998", isTrue: false},
+          {option: "2010", isTrue: false},
+          {option: "1702", isTrue: false}
+         ],
+        answer: "1912",
+        options: ["1912", "1998", "2010", "1702"]
+      },
+      {
+        question: "What canned food item was found 5km down in the Mariana Trench?",
+        answerOptions: [ 
+          {option: "Spam", isTrue: true},
+          {option: "Beans", isTrue: false},
+          {option: "Alphabetti Spaghetti", isTrue: false},
+          {option: "Macaroni Cheese", isTrue: false}
+         ],
+        answer: "Spam",
+        options: ["Spam", "Beans", "Alphabetti Spaghetti", "Macaroni Cheese"]
+      },
+      {
+        question: "What is the name of the deepest shipwreck ever discovered?",
+        answerOptions: [ 
+          {option: "U.S.S Samuel B Roberts", isTrue: true},
+          {option: "HMS Dougal", isTrue: false},
+          {option: "Lady Partridge", isTrue: false},
+          {option: "Titanic", isTrue: false}
+         ],
+        answer: "U.S.S Samuel B Roberts",
+        options: ["U.S.S Samuel B Roberts", "The Dougal", "Lady Partridge", "Titanic"]
+      },
+      {
+        question: "What is the name of the deepest point in the Mariana Trench?",
+        answerOptions: [ 
+          {option: "The Challenger Deep", isTrue: true},
+          {option: "In Too Deep", isTrue: false},
+          {option: "Sunk41", isTrue: false},
+          {option: "Mad Deep", isTrue: false}
+         ],
+        answer: "The Challenger Deep",
+        options: ["The Challenger Deep", "In Too Deep", "Sunk41", "Mad Deep"]
       }
 ]);
 
