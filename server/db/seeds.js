@@ -65,7 +65,7 @@ db.trench_elements.insertMany([
       },
       {
         title: "Wolf eels",
-        detailImg: "../imgs/wofEel.jpg",
+        detailImg: "../imgs/wolfeels.jpg",
         facts:
           "Wolf eels are scary-looking fish, with crab-crunching teeth, powerful jaws and speckled, grey bodies that look like they’ve been sculpted from a block of granite. They can live for at least 20 years and are enormous, up to 2.4 metres long, although mostly they hide their tapering bodies in caves and crevices in rocky reefs with just their heads sticking out. Wolf eels are not actually eels, but are members of a fish family known as wolf fish or sea wolves.",
       },
