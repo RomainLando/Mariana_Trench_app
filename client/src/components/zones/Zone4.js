@@ -1,7 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Zone4.css'
+import TrenchServices from '../../services/TrenchServices';
+import {useState, useEffect} from 'react';
+
 export default function Zone4() {
+
+  const [data, setData] = useState([]);
+  useEffect(() => {
+      TrenchServices.getTrench()
+          .then(info => setData(info[3].zone4))
+  }, []);
+
   return (
     <div className='background4'>
 

@@ -31,7 +31,7 @@ body {
 	100%{background-position: 100vw 0;}
 }
 #wave1 {
-	background:url('../../public/media/wave1.png') repeat-x 0 / 100% auto;
+	background:url('../media/wave1.png') repeat-x 0 / 100% auto;
 	height: 86px;
 	animation: ani 10s linear infinite ;
 	padding-left: 50vw;
@@ -46,7 +46,7 @@ body {
 }
 
 #wave2 {
-	background:url('../../public/media/wave2.png') repeat-x 0 / 100% auto;
+	background:url('../media/wave2.png') repeat-x 0 / 100% auto;
 	padding-left: 50vw;
     padding-right: 50vw;
     height:86px;
@@ -59,7 +59,7 @@ body {
 }
 
 #wave3 {
-	background:url('../../public/media/wave3.png') repeat-x 0 / 100% auto;
+	background:url('../media/wave3.png') repeat-x 0 / 100% auto;
 	padding-left: 50vw;
     padding-right: 50vw;
     height:86px;
@@ -72,7 +72,7 @@ body {
 }
 
 #wave4 {
-	background:url('../../public/media/wave4.png') repeat-x 0 / 100% auto;
+	background:url('../media/wave4.png') repeat-x 0 / 100% auto;
 	padding-left: 50vw;
     padding-right: 50vw;
     height:86px;
@@ -86,7 +86,7 @@ body {
 
 
 #cloud1 {
-	background:url('../../public/media/cloud4.png') repeat-x 0 / 100% auto;
+	background:url('../media/cloud4.png') repeat-x 0 / 100% auto;
 	padding-left: 50vw;
     padding-right: 50vw;
     height:24vh;

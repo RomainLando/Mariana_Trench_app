@@ -1,7 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
+import { Link } from 'react-router-dom'
+import './Zone5.css'
+import TrenchServices from '../../services/TrenchServices';
 import { Link } from "react-router-dom";
-import "./Zone5.css";
 import InfoDisplayPopUp from "../InfoDisplayPopup";
+
+export default function Zone5() {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+      TrenchServices.getTrench()
+          .then(info => setData(info[4].zone4))
+  }, []);
 
 export default function Zone5() {
   const [isOpen0, setIsOpen0] = useState(true);
