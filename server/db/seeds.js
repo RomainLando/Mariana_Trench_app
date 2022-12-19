@@ -9,8 +9,6 @@ db.dropDatabase();
 db.trench_elements.insertMany([
   // Zone 1 - Epipelagic Zone  (down to 200 m)
   {
-
-    // ../media/barry.png"
     zone1: [
       {
         title: "Depth of the Eurotunnel",
