@@ -1,10 +1,13 @@
 const baseURL = 'http://localhost:9000/api/trench/'
 
-
-export const getTrench = () => {
-    return fetch(baseURL)
-    .then(res => res.json())
+const TrenchServices = {
+    getTrench () {
+        return fetch(baseURL)
+        .then(res => res.json())
 }
+}
+
+export default TrenchServices;
 
 // export const postTrench = (payload) => {
 //     return fetch(baseURL, {
