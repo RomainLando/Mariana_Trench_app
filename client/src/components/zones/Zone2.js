@@ -1,5 +1,12 @@
+
 import React from 'react'
+
+import UpDownButtons from '../UpDownButtons'
+import './Zone2.css'
+import {useState, useEffect} from 'react';
+
 import { Link } from 'react-router-dom'
+
 import './Zone2.css'
 export default function Zone2() {
   return (
@@ -16,6 +23,4 @@ export default function Zone2() {
         <img id='ripple3' className='ripple' src='./media/underwater_ripple.png'></img>
         <img id='ripple4' className='ripple' src='./media/underwater_ripple.png'></img> */}
     </div>
-
-  )
-}
+  )}
