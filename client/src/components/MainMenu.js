@@ -14,7 +14,7 @@ export default function MainMenu() {
             <PlayerInfoForm/>
             <Link to ="/zone1" ><button>Lets explore!</button></Link>
         </div>
-        <img id='sub1' src='./media/submarine.png' ></img>
+        <img id='sub1' src='../media/submarine.png' ></img>
         <section id="wavewrapper">
         <div id="wave1"></div>
         <div id="wave2"></div>
