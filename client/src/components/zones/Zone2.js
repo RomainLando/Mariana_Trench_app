@@ -2,11 +2,17 @@
 import React from 'react'
 import './Zone2.css'
 import {useState, useEffect} from 'react';
-
 import { Link } from 'react-router-dom'
+import TrenchServices from '../../services/TrenchServices';
 
 import './Zone2.css'
 export default function Zone2() {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+      TrenchServices.getTrench()
+          .then(info => setData(info[1].zone2))
+  }, []);
+
   return (
     <div className='background2'>
       <h4>Mesopelagic Zone - The Twilight Zone</h4>
