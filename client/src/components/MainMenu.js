@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom'
 export default function MainMenu() {
     return (
         <>
-        <div>
+        <div id="cloud1"></div>
+        <div id="info">
             <h4> Main Menu</h4>
             <PlayerInfoForm/>
             <Link to ="/zone1" ><button>Lets explore!</button></Link>

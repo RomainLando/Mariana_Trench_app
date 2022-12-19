@@ -1,13 +1,18 @@
-
-
 html {
-    background-color: aliceblue
+    background-color: lightblue;
 }
 
 *{
 	margin:0;
 	padding:0;
-    /* position: relative; */
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+
 }
 
 #sub1 {
@@ -79,7 +84,17 @@ html {
     overflow: hidden;
 }
 
-/* #footer {
-    background-color: #00405B;
-    padding: 10rem;
-} */
+
+#cloud1 {
+	background:url('../../public/media/cloud4.png') repeat-x 0 / 100% auto;
+	padding-left: 50vw;
+    padding-right: 50vw;
+    height:40vh;
+	animation: ani 14s linear infinite ;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    overflow: hidden;
+
+}
