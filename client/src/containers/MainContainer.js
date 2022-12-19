@@ -18,7 +18,6 @@ export default function MainContainer() {
       <Router>
         <NavBar/>
         <Routes>
-
           <Route path="/" element={ <MainMenu/> } />
           <Route path="/quiz" element={ <Quiz/>} />
           <Route path="/leaderboard" element={ <Leaderboard/> } />
