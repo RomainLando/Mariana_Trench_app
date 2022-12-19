@@ -10,7 +10,7 @@ export default function Zone2() {
         <Link to ="/zone3" ><button>Down</button></Link>
 
       </div>
-      <img id='sub' src='./media/submarine.png' ></img>
+      <img className='sub' src='./media/submarine.png' ></img>
         {/* <img id='ripple1' className='ripple' src='./media/underwater_ripple.png'></img>
         <img id='ripple2' className='ripple' src='./media/underwater_ripple.png'></img>
         <img id='ripple3' className='ripple' src='./media/underwater_ripple.png'></img>

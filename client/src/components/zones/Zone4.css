@@ -13,13 +13,13 @@
     width: 100vw;
 }
 
-#sub {
+.sub {
     position: fixed;
-    top: 40vh;
-    right: 20vw;
-    width: 150px;
+    top: 45%;
+    right: 10%;
+    width: 20%;
     z-index: 2;
-}
+  }
 
 
 .ripple {
