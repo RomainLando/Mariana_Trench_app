@@ -1,10 +1,15 @@
 const baseURL = 'http://localhost:9000/api/questions/'
 
 
-export const getQuestions = () => {
+const QuestionsServices = {
+    getQuestions (){
     return fetch(baseURL)
     .then(res => res.json())
 }
+}
+
+
+export default QuestionsServices;
 
 // export const postQuestions = (payload) => {
 //     return fetch(baseURL, {
@@ -23,12 +28,3 @@ export const getQuestions = () => {
     
 // }
 
-
-// export const putQuestions = (payload, id) => {
-//     return fetch(baseURL + id + '/edit' , {
-//         method: 'PUT',
-//         body: JSON.stringify(payload),
-//         headers: { 'Content-Type': 'application/json'}
-//     })
-//     .then(res => res.json())
-// }
