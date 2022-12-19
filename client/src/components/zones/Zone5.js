@@ -6,6 +6,7 @@ import InfoDisplayPopUp from "../InfoDisplayPopup";
 import StaticInfoDisplayPopUp from "../StaticInfoDisplayPopup";
 
 export default function Zone5() {
+  
   const [isOpen0, setIsOpen0] = useState(true);
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
