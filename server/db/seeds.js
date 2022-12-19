@@ -147,7 +147,7 @@ db.trench_elements.insertMany([
       },
       {
         title: "Echinoderms",
-        detailImg: "../imgs/Echioderms.jpg",
+        detailImg: "../imgs/Echinoderms.jpg",
         facts:
           "Echinoderms live in every ocean, even off the coast of Antarctica. Well known as coastal dwellers, they can be found at depths over three miles deep (5,000 meters).echinoderms include sea stars, sea urchins, sea cucumbers, brittle stars, and feather stars (Fig. 3.83). Although they may appear very different, echinoderms all have two major defining characteristics that set them apart from all other animals: a water vascular system and five-sided radial symmetry.",
       },
