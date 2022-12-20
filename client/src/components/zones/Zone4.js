@@ -4,6 +4,7 @@ import "./Zone4.css";
 import TrenchServices from "../../services/TrenchServices";
 import InfoDisplayPopUp from "../InfoDisplayPopup";
 import StaticInfoDisplayPopUp from "../StaticInfoDisplayPopup";
+<<<<<<< HEAD
 import sub from "../../media/submarine.png";
 import spam from "../../media/icons/spam_tin_icon.png";
 import squid from "../../media/icons/giant_squid_icon.png";
@@ -12,6 +13,18 @@ import seaPig from "../../media/icons/sea_pig_icon.png";
 import star from "../../media/icons/echinoderms_icon.png";
 import up from "../../media/icons/up_icon.png";
 import down from "../../media/icons/down_icon.png";
+=======
+
+import sub from "../../media/submarine.png"
+import spam from "../../media/icons/spam_tin_icon.png"
+import squid from "../../media/icons/giant_squid_icon.png"
+import spider from "../../media/icons/sea_spider_icon.png"
+import seaPig from "../../media/icons/sea_pig_icon.png"
+import star from "../../media/icons/echinoderms_icon.png"
+import up from "../../media/icons/up_icon.png";
+import down from "../../media/icons/down_icon.png";
+
+>>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
 
 export default function Zone4({ player }) {
   const [isOpen0, setIsOpen0] = useState(true);
@@ -122,6 +135,7 @@ export default function Zone4({ player }) {
           />
         )}
       </div>
+<<<<<<< HEAD
       <div className="element_container">
         <div>
           <button className="element" onClick={togglePopup1}>
@@ -163,6 +177,50 @@ export default function Zone4({ player }) {
             <InfoDisplayPopUp content={data[4]} handleClose={togglePopup5} />
           )}
         </div>
+=======
+
+      <div className="element_container">
+      <div>
+        <button className="element" onClick={togglePopup1}>
+          <img className="element_img" src={spam}></img>
+        </button>
+        {isOpen1 && (
+          <InfoDisplayPopUp content={data[0]} handleClose={togglePopup1} />
+        )}
+      </div>
+      <div>
+        <button className="element" onClick={togglePopup2}>
+          <img className="element_img" src={squid}></img>
+        </button>
+        {isOpen2 && (
+          <InfoDisplayPopUp content={data[1]} handleClose={togglePopup2} />
+        )}
+      </div>
+      <div>
+        <button className="element" onClick={togglePopup3}>
+          <img className="element_img" src={spider}></img>
+        </button>
+        {isOpen3 && (
+          <InfoDisplayPopUp content={data[2]} handleClose={togglePopup3} />
+        )}
+      </div>
+      <div>
+        <button className="element" onClick={togglePopup4}>
+          <img className="element_img" src={seaPig}></img>
+        </button>
+        {isOpen4 && (
+          <InfoDisplayPopUp content={data[3]} handleClose={togglePopup4} />
+        )}
+      </div>
+      <div>
+        <button className="element" onClick={togglePopup5}>
+          <img className="element_img" src={star}></img>
+        </button>
+        {isOpen5 && (
+          <InfoDisplayPopUp content={data[4]} handleClose={togglePopup5} />
+        )}
+      </div>
+>>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
       </div>
 
 

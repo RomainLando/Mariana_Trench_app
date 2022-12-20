@@ -125,6 +125,10 @@ export default function Zone2({ player }) {
         )}
       </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
       <div className="element_container">
       <div>
         <button className="element" onClick={togglePopup1}>
@@ -166,6 +170,7 @@ export default function Zone2({ player }) {
           <InfoDisplayPopUp content={data[4]} handleClose={togglePopup5} />
         )}
       </div>
+<<<<<<< HEAD
 =======
       <div className="element_container2">
         <div>
@@ -209,6 +214,9 @@ export default function Zone2({ player }) {
           )}
         </div>
 >>>>>>> 0f5aa6d0d229306633e588238a32d8dfaa421d16
+=======
+
+>>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
       </div>
       <img className="sub" src={sub}></img>
       {/* <img id='ripple1' className='ripple' src='./media/underwater_ripple.png'></img>

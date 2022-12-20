@@ -4,6 +4,10 @@ import "./Zone3.css";
 import TrenchServices from "../../services/TrenchServices";
 import InfoDisplayPopUp from "../InfoDisplayPopup";
 import StaticInfoDisplayPopUp from "../StaticInfoDisplayPopup";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
 import sub from "../../media/submarine.png"
 import titanic from "../../media/icons/titanic_icon.png"
 import worm from "../../media/icons/zombie_worm_icon.png"
@@ -15,6 +19,10 @@ import up from "../../media/icons/up_icon.png";
 import down from "../../media/icons/down_icon.png";
 
 export default function Zone3() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
 
 export default function Zone3({ player }) {
   const [isOpen0, setIsOpen0] = useState(true);
@@ -67,6 +75,10 @@ export default function Zone3({ player }) {
   };
 
   return (
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
     <div className='background3'>
       <h2 className="zone_title">Bathypelagic Zone - The Midnight Zone</h2>
       <div className="up-down">
@@ -79,6 +91,10 @@ export default function Zone3({ player }) {
         <button>
           <img className="upImg" src={down}></img>
           </button>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
         </Link>
       </div>
       <div>
@@ -155,6 +171,10 @@ export default function Zone3({ player }) {
           )}
         </div>
         <div className="element_container">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
         <div>
           <button className="element" onClick={togglePopup1}>
             <img className="element_img" src={cable}></img>
@@ -172,6 +192,10 @@ export default function Zone3({ player }) {
           )}
         </div>
         <div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
             <button className="element" onClick={togglePopup3}>
               <img className="element_img" src={benthocodon}></img>
             </button>
@@ -180,6 +204,10 @@ export default function Zone3({ player }) {
             )}
           </div>
          
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
         <div>
           <button className="element" onClick={togglePopup4}>
             <img className="element_img" src={shark}></img>
