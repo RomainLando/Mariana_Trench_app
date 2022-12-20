@@ -111,5 +111,31 @@
     margin: 0;
   }
   
+
+.element_container3 {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  /* background-color: red; */
+  margin-left: 10vw;
+  margin-right: 10vw;
+  align-items: center;
+  gap: 5%;
+  justify-content:left;
+}
+
+.element3{
+  background-color: transparent;
+  padding: 10%;
+  border: 0;
+  margin: 5%;
+}
+
+.element_img3 {
+  max-width: 50%;
+}
+
+
+
   
   
