@@ -3,16 +3,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    background-color:transparent;
     
 }
 
 #navbuttons > a > button {
     width: max-content;
-    padding: 10px;
-    font-size: 30px;
-    background-color: #F1AC54;
-    border-color: #89673a;
-
+    padding: 1.5vw;
+    font-size: 100%;
+    background-color: #00405B;
+    border-color: lightblue;
     border-radius: 60px;
-
+    color: lightblue ;
 }
