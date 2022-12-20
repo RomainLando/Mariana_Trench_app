@@ -63,6 +63,13 @@ export default function Zone5() {
     setIsOpen7(!isOpen7);
   };
 
+  const playerHeightCalculation = () => {
+    const heightInCm = player.height;
+    const layerDepthInCm = 11000 * 100;
+    const noOfPlayers = layerDepthInCm / heightInCm;
+    return Math.round(noOfPlayers);
+  };
+
   return (
     <>
       <div className="background5">
@@ -73,8 +80,8 @@ export default function Zone5() {
           <img className="upImg" src={up}></img>
           </button>
           </Link>
-      </div>
-       <div>
+        </div>
+        <div>
           <input
             type="button"
             value="Zone Information"
@@ -86,17 +93,46 @@ export default function Zone5() {
                 <>
                   <img src="../media/barry.png"></img>
                   <br></br>
-                  <h3>
-                    This is where the title of the static level information will
-                    go!
-                  </h3>
+                  <h3>Welcome Captain {player.name} to the Trenches!</h3>
                   <br></br>
                   <p>
-                    This is where the details of the static level information
-                    will go!
+                    Our next zone is the Hadal Zone, also known as the
+                    Hadalpelagic Zone!
                   </p>
                   <br></br>
-                  <p>Say hello to Barry!</p>
+                  <p>
+                    These canyons in the seafloor level stretch from 6000 metres
+                    deep, down to over 10000 metres in some places - deeper than
+                    Mt Everest (8892m) is tall!
+                    <p></p>
+                    <br></br>
+                    {!player.name ? (
+                      <> </>
+                    ) : (
+                      <>
+                        You would need {playerHeightCalculation()} Captain
+                        {player.name}'s standing on top of each other to reach
+                        the surface from the bottom!
+                      </>
+                    )}
+                  </p>
+                  <br></br>
+                  <p>
+                    The very deepest point in the ocean is the Challenger Deep,
+                    within the Mariana Trench in the Pacific Ocean, at 10924m
+                    down.
+                  </p>
+                  <br></br>
+                  <p>
+                    The pressure down here is incredible, equivalent to having
+                    50 jumbo jets pressing down on you!  That's why not many
+                    people have visited this lonely place...
+                  </p>
+                  <br></br>
+                  <p>
+                    Tap or Click on the cross in the top right to close this box
+                    and see what you will find!
+                  </p>
                 </>
               }
               handleClose={togglePopup0}
@@ -162,9 +198,6 @@ export default function Zone5() {
         )}
       </div>
       </div>
-    <div className="quizButton">
-          <Link to="/quiz"><button>Take a quiz!</button></Link>
-    </div>
       <img className="sub" src={sub}></img>
     </div>
     
