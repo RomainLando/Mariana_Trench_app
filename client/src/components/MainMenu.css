@@ -1,7 +1,3 @@
-/* body {
-    background-color: lightblue;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -11,17 +7,17 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 18vh;
+  margin-top: 16vh;
   text-align: center;
-  color: #00405B;
+  color: #00405b;
 }
 
 #info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5vh;
-  text-align: center;
+  margin-top: 3vh;
+  color: #00405b;
 }
 
 #sub1 {
@@ -112,4 +108,29 @@
   top: 0;
   z-index: -1;
   overflow: hidden;
+}
+
+.landingbutton {
+  background: #00405b;
+  color: white;
+  border: 0;
+  transition-duration: 0.4s;
+  margin: 0.5rem;
+  border-radius: 0.2rem;
+  padding: 1.5rem;
+}
+
+#go {
+  font-size: large;
+  font-weight: bold;
+}
+
+#go:hover {
+  background-color: green;
+  color: white;
+}
+
+#clear:hover {
+  background-color: red;
+  color: black;
 }
