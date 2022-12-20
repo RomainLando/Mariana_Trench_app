@@ -1,0 +1,22 @@
+#leaderboard_container > h4 {
+    text-align: center;
+    /* margin-top: 20%; */
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+#leaderboard_container {
+    
+    /* background: #d754ad;
+    background: -webkit-linear-gradient(120deg, #546ed7 0%, #5491d7 10%, #67f9bc 62%, #33febe 100%);
+    background: linear-gradient(-30deg, #546ed7 0%, #5491d7 10%, #67f9bc 62%, #33febe 100%); */
+    width: 45%;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 10vh 20px;
+    margin: auto;
+    
+
+}
+
