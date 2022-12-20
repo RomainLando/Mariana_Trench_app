@@ -27,3 +27,20 @@
     border-color: #006349;
 
 }
+
+#quiz-score {
+    align-self: center;
+    align-items: center;
+    font-size: 45px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-align: center;
+    border: 3px solid #00CF97;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#quiz-leaderboard-p {
+    font-size: 45px;
+    margin-top: 20px;
+}
