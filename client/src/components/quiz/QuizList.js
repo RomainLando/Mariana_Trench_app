@@ -2,9 +2,10 @@ import React from 'react';
 import './QuizList.css'
 import { Link } from 'react-router-dom';
 
-const QuizList = ({ questions, randIndex, handleClick, score, qTracker }) => {
+const QuizList = ({ questions, randIndex, handleClick, score, qTracker, checkEnd }) => {
     if (!questions.length) return null;
     if (!randIndex.length) return null;
+    
 
     return (
 
@@ -13,10 +14,11 @@ const QuizList = ({ questions, randIndex, handleClick, score, qTracker }) => {
             <div>
                 {qTracker === 5 ? (
                     <div>
+                        {checkEnd()}
                         <section id='quiz-score'>
                             You scored {score} out of 5!
                         </section>
-                        <p id="quiz-leaderboard-p">See your history in the leaderboard!</p>
+                        <p id="quiz-leaderboard-p">See your score in the leaderboard!</p>
                         
                     </div>
                 ) : (<div>
@@ -27,7 +29,11 @@ const QuizList = ({ questions, randIndex, handleClick, score, qTracker }) => {
                         {questions[randIndex[qTracker]].answerOptions.map((option, index) => {
                             return (
                                 
-                                    <button key={index} onClick={() => { handleClick(option.isTrue) }}>
+                                    <button key={index} onClick={() => { 
+                                        handleClick(option.isTrue)
+                                        
+                                        
+                                        }}>
                                         {option.option}
                                     </button>
 

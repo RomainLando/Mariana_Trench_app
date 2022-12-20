@@ -7,6 +7,12 @@
     margin-bottom: 0.5vw;
     background-color:transparent;
     
+    /* 
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: center;
+     */
+        
 }
 
 #navbuttons > a > button {
@@ -18,3 +24,22 @@
     border-radius: 60px;
     color: lightblue ;
 }
+
+
+ */ padding: 10px;
+    font-size: 30px;
+    background-color: #c2a1d4;
+    border-color: #77436e;
+
+    border-radius: 60px;
+
+}
+
+#navbar-title {
+    text-align: center;
+    font-size: 40px;
+    
+
+}
+
+     */
