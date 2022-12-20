@@ -1,0 +1,29 @@
+#QuizContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5vw;
+
+}
+
+#QuizContainer > h3 {
+    align-self: center;
+    align-items: center;
+    font-size: 45px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-align: center;
+    
+}
+
+#QuizContainer > button {
+    width: 45vw;
+    padding: 5vw;
+    font-size: 1.75em;
+    height: 10rem;
+    border-radius: 20px;
+    background-color: #00CF97;
+    border-color: #006349;
+
+}
