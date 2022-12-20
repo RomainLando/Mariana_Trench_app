@@ -115,4 +115,27 @@
   margin: 0;
 }
 
+.element_container {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  /* background-color: red; */
+  margin-left: 10vw;
+  margin-right: 10vw;
+  align-items: center;
+  gap: 5%;
+  justify-content: center;
+}
+
+.element{
+  background-color: transparent;
+  padding: 10%;
+  border: 0;
+  margin: 5%;
+}
+
+.element_img {
+  max-width: 50%;
+}
+
 
