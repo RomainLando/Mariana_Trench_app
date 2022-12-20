@@ -4,6 +4,7 @@ import "./Zone4.css";
 import TrenchServices from "../../services/TrenchServices";
 import InfoDisplayPopUp from "../InfoDisplayPopup";
 import StaticInfoDisplayPopUp from "../StaticInfoDisplayPopup";
+
 import sub from "../../media/submarine.png"
 import spam from "../../media/icons/spam_tin_icon.png"
 import squid from "../../media/icons/giant_squid_icon.png"
@@ -14,7 +15,7 @@ import up from "../../media/icons/up_icon.png";
 import down from "../../media/icons/down_icon.png";
 
 
-export default function Zone4() {
+export default function Zone4({ player }) {
   const [isOpen0, setIsOpen0] = useState(true);
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -52,6 +53,12 @@ export default function Zone4() {
     setIsOpen5(!isOpen5);
   };
 
+  const playerHeightCalculation = () => {
+    const heightInCm = player.height;
+    const layerDepthInCm = 6000 * 100;
+    const noOfPlayers = layerDepthInCm / heightInCm;
+    return Math.round(noOfPlayers);
+  };
   return (
     <div className="background4">
       <h2 id="zone_title">Abyssopelagic Zone - The Abyss</h2>
@@ -75,23 +82,49 @@ export default function Zone4() {
               <>
                 <img src="../media/barry.png"></img>
                 <br></br>
-                <h3>
-                  This is where the title of the static level information will
-                  go!
-                </h3>
+                <h3>Welcome Captain {player.name} to the Abyssal Zone!</h3>
                 <br></br>
                 <p>
-                  This is where the details of the static level information will
-                  go!
+                  Our next zone is the Abyssal Zone, also known as the
+                  Abyssopelagic Zone!
                 </p>
                 <br></br>
-                <p>Say hello to Barry!</p>
+                <p>
+                  This level stretches from 4000 metres, down to 6000 metres -
+                  so about the height of 43 Great Pyramids of Giza stacked on
+                  top of each other
+                  {!player.name ? (
+                    <>! </>
+                  ) : (
+                    <>
+                      , or {playerHeightCalculation()} Captain {player.name}'s
+                      standing on top of each other!
+                    </>
+                  )}
+                </p>
+                <br></br>
+                <p>
+                  The abyss is largely unexplored, and contains some very unique
+                  life, specialised to survive at extreme pressure and total
+                  darkness. Most of the seafloor is at this level.
+                </p>
+                <br></br>
+                <p>
+                  The seafloor is a landscape made up of mainly vast expanses of
+                  flat plains, trenches and undersea volcanoes.
+                </p>
+                <br></br>
+                <p>
+                  Tap or Click on the cross in the top right to close this box
+                  and see what you will find!
+                </p>
               </>
             }
             handleClose={togglePopup0}
           />
         )}
       </div>
+
       <div className="element_container">
       <div>
         <button className="element" onClick={togglePopup1}>

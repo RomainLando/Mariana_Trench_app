@@ -13,7 +13,7 @@ import viperfish from "../../media/icons/viperfish_icon.png";
 import up from "../../media/icons/up_icon.png";
 import down from "../../media/icons/down_icon.png";
 
-export default function Zone2() {
+export default function Zone2({ player }) {
   const [isOpen0, setIsOpen0] = useState(true);
   const [isOpen1, setIsOpen1] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -51,6 +51,13 @@ export default function Zone2() {
     setIsOpen5(!isOpen5);
   };
 
+  const playerHeightCalculation = () => {
+    const heightInCm = player.height;
+    const layerDepthInCm = 1000 * 100;
+    const noOfPlayers = layerDepthInCm / heightInCm;
+    return Math.round(noOfPlayers);
+  };
+
   return (
     <div className="background2">
       <h2 className="zone_title">Mesopelagic Zone - The Twilight Zone</h2>
@@ -74,23 +81,50 @@ export default function Zone2() {
               <>
                 <img src="../media/barry.png"></img>
                 <br></br>
-                <h3>
-                  This is where the title of the static level information will
-                  go!
-                </h3>
+                <h3>Welcome Captain {player.name} to the Twilight Zone!</h3>
                 <br></br>
                 <p>
-                  This is where the details of the static level information will
-                  go!
+                  Our next zone is the Twilight Zone, also known as the
+                  Mesopelagic Zone!
                 </p>
                 <br></br>
-                <p>Say hello to Barry!</p>
+                <p>
+                  This level stretches from 200 metres, down to 1000 metres, so
+                  about the height of 3 Eiffel Towers stacked on top of each
+                  other
+                  {!player.name ? (
+                    <>! </>
+                  ) : (
+                    <>
+                      , or {playerHeightCalculation()} Captain {player.name}'s
+                      standing on top of each other!
+                    </>
+                  )}
+                </p>
+                <br></br>
+                <p>
+                  It's cold and dark in this region, as the light and heat from
+                  the sun fade away, and the only real light coming from
+                  creatures that glow in the dark.
+                </p>
+                <br></br>
+                <p>
+                  It may be dark but it's still busy! Recent studies have shown
+                  there may be ten times as many fish as previously thought at
+                  this level - more than the rest of the ocean combined!
+                </p>
+                <br></br>
+                <p>
+                  Tap or Click on the cross in the top right to close this box
+                  and see what you will find!
+                </p>
               </>
             }
             handleClose={togglePopup0}
           />
         )}
       </div>
+
       <div className="element_container">
       <div>
         <button className="element" onClick={togglePopup1}>
@@ -132,6 +166,7 @@ export default function Zone2() {
           <InfoDisplayPopUp content={data[4]} handleClose={togglePopup5} />
         )}
       </div>
+
       </div>
       <img className="sub" src={sub}></img>
       {/* <img id='ripple1' className='ripple' src='./media/underwater_ripple.png'></img>

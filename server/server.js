@@ -17,6 +17,12 @@ MongoClient.connect('mongodb://127.0.0.1:27017', {useUnifiedTopology:true})
     const questionsCollection = db.collection('questions');
     const questionsRouter = createRouter(questionsCollection);
     app.use('/api/questions', questionsRouter);
+
+    const leaderboardCollection = db.collection('leaderboard');
+    const leaderboardRouter = createRouter(leaderboardCollection);
+    app.use('/api/leaderboard', leaderboardRouter);
+
+
 })
 .catch(console.error);
 
