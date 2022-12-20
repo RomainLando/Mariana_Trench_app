@@ -10,7 +10,7 @@ const QuizList = ({ questions, randIndex, handleClick, score, qTracker }) => {
         <>
 
             <div>
-                {qTracker === 4 ? (
+                {qTracker === 5 ? (
                     <div>
                         <section>
                             You scored {score} out of 5!
