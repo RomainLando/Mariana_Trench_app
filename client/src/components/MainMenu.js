@@ -12,7 +12,7 @@ export default function MainMenu({ createPlayer, clearPlayer, player }) {
   return (
     <>
       <div id="cloud1"></div>
-      <h1>Welcome to the Mariana Trench Explorer</h1>
+      <h1 id="header">Welcome to the Mariana Trench Explorer</h1>
       <div id="info">
         {!player.name ? (
           <PlayerInfoForm addPlayer={createPlayer} />
