@@ -31,6 +31,7 @@
     position: fixed;
     right: calc(15% - 30px);
     top: calc(100vh - 85vh - 33px);
+    color: red;
     background: #ededed;
     width: 25px;
     height: 25px;
@@ -49,5 +50,9 @@
   }
 
   p {
+    text-align: center;
+  }
+
+  h3 {
     text-align: center;
   }

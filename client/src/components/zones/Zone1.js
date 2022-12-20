@@ -81,9 +81,7 @@ export default function Zone1({ player }) {
                 <br></br>
                 <p>
                   Our first zone is the Sunlight Zone, also known as the
-                  Epipelagic Zone! It's called the Sunlight Zone because water
-                  absorbs sunlight really well! It's total
-                  darkness below this depth!
+                  Epipelagic Zone!
                 </p>
                 <br></br>
                 <p>
@@ -94,11 +92,21 @@ export default function Zone1({ player }) {
                   ) : (
                     <>
                       , or {playerHeightCalculation()} Captain {player.name}'s
-                      standing on top of each other!{" "}
+                      standing on top of each other!
                     </>
                   )}
                 </p>
                 <br></br>
+                <p>
+                  It's called the Sunlight Zone because water absorbs sunlight
+                  really well, and so it's darkness below this depth!
+                </p>
+                <br></br>
+                <p>
+                  Tap or Click on the cross in the top right to close this box
+                  and start exploring this level. Tap down when you're ready to
+                  go deeper!
+                </p>
               </>
             }
             handleClose={togglePopup0}
