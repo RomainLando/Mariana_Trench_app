@@ -5,6 +5,9 @@ import TrenchServices from '../../services/TrenchServices';
 import InfoDisplayPopUp from "../InfoDisplayPopup";
 import StaticInfoDisplayPopUp from "../StaticInfoDisplayPopup";
 import sub from "../../media/submarine.png"
+import titanic from "../../media/icons/titanic_icon.png"
+import worm from "../../media/icons/zombie_worm_icon.png"
+import shark from "../../media/icons/white_shark_icon.png"
 
 export default function Zone3() {
 
@@ -106,24 +109,30 @@ export default function Zone3() {
         </div>
         {/* Ewan above */}
         {/* Gintare Below */}
-        <div>
-          <input type="button" value="Element4" onClick={togglePopup4} />
-          {isOpen4 && (
-            <InfoDisplayPopUp content={data[3]} handleClose={togglePopup4} />
-          )}
-        </div>
-        <div>
-          <input type="button" value="Element5" onClick={togglePopup5} />
-          {isOpen5 && (
-            <InfoDisplayPopUp content={data[4]} handleClose={togglePopup5} />
-          )}
-        </div>
-        <div>
-          <input type="button" value="Element6" onClick={togglePopup6} />
-          {isOpen6 && (
-            <InfoDisplayPopUp content={data[5]} handleClose={togglePopup6} />
-          )}
-        </div>
+      <div>
+        <button className="element4" onClick={togglePopup4}>
+          <img className="element_img" src={shark}></img>
+        </button>
+        {isOpen4 && (
+          <InfoDisplayPopUp content={data[3]} handleClose={togglePopup4} />
+        )}
+      </div>
+      <div>
+        <button className="element5" onClick={togglePopup5}>
+          <img className="element_img" src={worm}></img>
+        </button>
+        {isOpen5 && (
+          <InfoDisplayPopUp content={data[4]} handleClose={togglePopup5} />
+        )}
+      </div>
+      <div>
+        <button className="element6" onClick={togglePopup6}>
+          <img className="element_img" src={titanic}></img>
+        </button>
+        {isOpen6 && (
+          <InfoDisplayPopUp content={data[5]} handleClose={togglePopup6} />
+        )}
+      </div>
       <img className='sub' src={sub} ></img>
         {/* <img id='ripple1' className='ripple' src='./media/underwater_ripple.png'></img>
         <img id='ripple2' className='ripple' src='./media/underwater_ripple.png'></img>

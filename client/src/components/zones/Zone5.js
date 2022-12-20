@@ -5,6 +5,13 @@ import TrenchServices from "../../services/TrenchServices";
 import InfoDisplayPopUp from "../InfoDisplayPopup";
 import StaticInfoDisplayPopUp from "../StaticInfoDisplayPopup";
 import sub from "../../media/submarine.png"
+import waste from "../../media/icons/plastic_waste_icon.png"
+import ship from "../../media/icons/shipwreck_icon.png"
+import trieste from "../../media/icons/trieste_icon.png"
+import snailfish from "../../media/icons/snailfish_icon.png"
+import dumbo from "../../media/icons/dumbo_octopus_icon.png"
+import combjelly from "../../media/icons/combjelly_icon.png"
+import grenadier from "../../media/icons/Grenadier_icon.png"
 
 export default function Zone5() {
   
@@ -59,12 +66,12 @@ export default function Zone5() {
     <>
       <div className="background5">
         <h4>Hadalpelagic Zone - The Trenches</h4>
-        <div id="up-down">
+      <div id="up-down">
           <Link to="/zone4">
             <button>Up</button>
           </Link>
-        </div>
-        <div>
+      </div>
+       <div>
           <input
             type="button"
             value="Zone Information"
@@ -93,50 +100,64 @@ export default function Zone5() {
             />
           )}
         </div>
-        <div>
-          <input type="button" value="Element1" onClick={togglePopup1} />
-          {isOpen1 && (
-            <InfoDisplayPopUp content={data[0]} handleClose={togglePopup1} />
-          )}
-        </div>
-        <div>
-          <input type="button" value="Element2" onClick={togglePopup2} />
-          {isOpen2 && (
-            <InfoDisplayPopUp content={data[1]} handleClose={togglePopup2} />
-          )}
-        </div>
-        <div>
-          <input type="button" value="Element3" onClick={togglePopup3} />
-          {isOpen3 && (
-            <InfoDisplayPopUp content={data[2]} handleClose={togglePopup3} />
-          )}
-        </div>
-        <div>
-          <input type="button" value="Element4" onClick={togglePopup4} />
-          {isOpen4 && (
-            <InfoDisplayPopUp content={data[3]} handleClose={togglePopup4} />
-          )}
-        </div>
-        <div>
-          <input type="button" value="Element5" onClick={togglePopup5} />
-          {isOpen5 && (
-            <InfoDisplayPopUp content={data[4]} handleClose={togglePopup5} />
-          )}
-        </div>
-        <div>
-          <input type="button" value="Element6" onClick={togglePopup6} />
-          {isOpen6 && (
-            <InfoDisplayPopUp content={data[5]} handleClose={togglePopup6} />
-          )}
-        </div>
-        <div>
-          <input type="button" value="Element7" onClick={togglePopup7} />
-          {isOpen7 && (
-            <InfoDisplayPopUp content={data[6]} handleClose={togglePopup7} />
-          )}
-        </div>
-        <img className="sub" src={sub}></img>
+      <div>
+        <button className="element" onClick={togglePopup1}>
+        <img className="element_img" src={ship}></img>
+        </button>
+        {isOpen1 && (
+          <InfoDisplayPopUp content={data[0]} handleClose={togglePopup1} />
+        )}
       </div>
+      <div>
+        <button className="element2" onClick={togglePopup2}>
+          <img className="element_img" src={waste}></img>
+        </button>
+        {isOpen2 && (
+          <InfoDisplayPopUp content={data[1]} handleClose={togglePopup2} />
+        )}
+      </div>
+      <div>
+        <button className="element3" onClick={togglePopup3}>
+          <img className="element_img" src={trieste}></img>
+        </button>
+        {isOpen3 && (
+          <InfoDisplayPopUp content={data[2]} handleClose={togglePopup3} />
+        )}
+      </div>
+      <div>
+        <button className="element4" onClick={togglePopup4}>
+          <img className="element_img" src={snailfish}></img>
+        </button>
+        {isOpen4 && (
+          <InfoDisplayPopUp content={data[3]} handleClose={togglePopup4} />
+        )}
+      </div>
+      <div>
+        <button className="element4" onClick={togglePopup5}>
+          <img className="element_img" src={dumbo}></img>
+        </button>
+        {isOpen5 && (
+          <InfoDisplayPopUp content={data[4]} handleClose={togglePopup5} />
+        )}
+      </div>
+      <div>
+        <button className="element5" onClick={togglePopup6}>
+          <img className="element_img" src={combjelly}></img>
+        </button>
+        {isOpen6 && (
+          <InfoDisplayPopUp content={data[5]} handleClose={togglePopup6} />
+        )}
+      </div>
+      <div>
+        <button className="element6" onClick={togglePopup7}>
+          <img className="element_img" src={grenadier}></img>
+        </button>
+        {isOpen7 && (
+          <InfoDisplayPopUp content={data[6]} handleClose={togglePopup7} />
+        )}
+      </div>
+      <img className="sub" src={sub}></img>
+    </div>
     </>
   );
 }
