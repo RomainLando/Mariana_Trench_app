@@ -1,5 +1,6 @@
 import React from 'react';
 import './QuizList.css'
+import { Link } from 'react-router-dom';
 
 const QuizList = ({ questions, randIndex, handleClick, score, qTracker }) => {
     if (!questions.length) return null;
@@ -12,9 +13,10 @@ const QuizList = ({ questions, randIndex, handleClick, score, qTracker }) => {
             <div>
                 {qTracker === 5 ? (
                     <div>
-                        <section>
+                        <section id='quiz-score'>
                             You scored {score} out of 5!
                         </section>
+                        <p id="quiz-leaderboard-p">See your history in the leaderboard!</p>
                         
                     </div>
                 ) : (<div>
