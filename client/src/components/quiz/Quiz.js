@@ -23,7 +23,7 @@ export default function Quiz() {
         const ques = [...questions]
         const arr = []
         const max = res.length
-        while (arr.length < 5) {
+        while (arr.length < 6) {
           var candidateInt = Math.floor(Math.random() * max)
           if (arr.indexOf(candidateInt) === -1) arr.push(candidateInt)
         }
@@ -36,8 +36,9 @@ export default function Quiz() {
 
 
   const updateCounter = () => {
-    if (qTracker < 4) {
-      let count = qTracker + 1;
+
+    if (qTracker < 6){
+      let count = qTracker+1;
       setQtracker(count);
 
     }
