@@ -1,5 +1,5 @@
 .background4 {
-    background-color: #03989E;
+    background-color:#002D3C;
 
 
 }
@@ -109,16 +109,16 @@
 }
 
 
-#zone-title {
+#zone_title {
     text-align: center;
     font-size: 40px;
     color: #a9b31f;
-    padding-top: 10%;
+    padding-top: 2%;
     margin: 0;
 }
 
 
-.element_container4 {
+.element_container {
     display: flex;
     max-width: 100%;
     flex-wrap: wrap;
@@ -130,14 +130,27 @@
     justify-content:left;
   }
   
-  .element4{
+  .element{
     background-color: transparent;
     padding: 10%;
     border: 0;
-    margin: 5%;
+    margin: 0%;
   }
   
-  .element_img4 {
+  .element_img {
+    max-width: 50%;
+  }
+  .up-down {
+    display:flex;
+    margin-left: 5%;
+    border: 10%;
+    max-height: 5%;
+    max-width: 6%;
+  
+  }
+  
+  .upImg {
+    background-color: transparent;
     max-width: 50%;
   }
   

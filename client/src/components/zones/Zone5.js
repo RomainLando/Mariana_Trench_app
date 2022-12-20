@@ -12,6 +12,7 @@ import snailfish from "../../media/icons/snailfish_icon.png"
 import dumbo from "../../media/icons/dumbo_octopus_icon.png"
 import combjelly from "../../media/icons/combjelly_icon.png"
 import grenadier from "../../media/icons/Grenadier_icon.png"
+import up from "../../media/icons/up_icon.png"
 
 export default function Zone5() {
   
@@ -65,10 +66,12 @@ export default function Zone5() {
   return (
     <>
       <div className="background5">
-        <h4>Hadalpelagic Zone - The Trenches</h4>
-      <div id="up-down">
+        <h2 id="zone5_title">Hadalpelagic Zone - The Trenches</h2>
+      <div className="up-down">
           <Link to="/zone4">
-            <button>Up</button>
+          <button>
+          <img className="upImg" src={up}></img>
+          </button>
           </Link>
       </div>
        <div>
@@ -159,6 +162,9 @@ export default function Zone5() {
         )}
       </div>
       </div>
+    <div className="quizButton">
+          <Link to="/quiz"><button>Take a quiz!</button></Link>
+    </div>
       <img className="sub" src={sub}></img>
     </div>
     

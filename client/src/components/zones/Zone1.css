@@ -107,35 +107,47 @@
 }
 
 
-#zone-title {
+.zone-title {
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   color: #a9b31f;
-  padding-top: 10%;
-  margin: 10%;
+  padding-top: 0%;
+  margin: 2%;
 }
 
 .element_container {
   display: flex;
   max-width: 100%;
   flex-wrap: wrap;
-  /* background-color: red; */
   margin-left: 10vw;
   margin-right: 10vw;
+  margin-bottom: 0%;
   align-items: center;
-  gap: 5%;
-  justify-content: center;
+  gap: 0%
 }
 
 .element{
   background-color: transparent;
-  padding: 10%;
+  padding: 0%;
   border: 0;
-  margin: 5%;
+  margin: 0%;
 }
 
 .element_img {
+  max-width: 30%;
+}
+.up-down {
+  display:flex;
+  margin-left: 10%;
+  border: 20%;
+  max-height: 5%;
   max-width: 50%;
+ 
+}
+
+.upImg {
+  background-color: transparent;
+  max-width: 30%;
 }
 
 

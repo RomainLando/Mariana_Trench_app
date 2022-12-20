@@ -3,12 +3,15 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    border: red sold 2px;
+    padding-top: 1%;
     
 }
 
 #navbuttons > a > button {
     width: max-content;
-    padding: 10px;
+    border: red sold 2px;
+    padding: 8px;
     font-size: 30px;
     background-color: #F1AC54;
     border-color: #89673a;

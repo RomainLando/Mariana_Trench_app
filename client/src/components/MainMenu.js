@@ -16,7 +16,7 @@ export default function MainMenu() {
             <div id="info">
                 <h4> Main Menu</h4>
                 <PlayerInfoForm />
-                <Link to='/zone1'><button>Lets explore!</button></Link>
+                <Link to='/zone1'><button className="explorer">Lets explore!</button></Link>
             </div>
             <img id='sub1' src={sub} ></img>
             <section id="wavewrapper">

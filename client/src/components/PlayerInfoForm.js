@@ -39,8 +39,11 @@ export default function PlayerInfoForm() {
 
                 </div>
 
-
-                <input type="submit" name="submit" value="Submit" />
+                <div>
+                    <button className="submit">
+                    <input type="submit" name="submit" value="Submit" />
+                    </button>
+                </div>
             </form>
 
         </div>
