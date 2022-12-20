@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 import sub from "../media/submarine.png";
 
 export default function MainMenu({ createPlayer, clearPlayer, player }) {
+  const buttonText =
+    "Wait!  I'm not " + player.name + " or my height is wrong!";
 
-  const buttonText = "Wait!  I'm not " + player.name + " or my height is wrong!"
- 
   return (
     <>
       <div id="cloud1"></div>
-      <h4> Main Menu</h4>
+      <h4>Main Menu</h4>
       <div id="info">
         {!player.name ? (
           <PlayerInfoForm addPlayer={createPlayer} />
@@ -26,7 +26,11 @@ export default function MainMenu({ createPlayer, clearPlayer, player }) {
               </Link>
             </div>
             <div>
-   <input type="button" onClick={clearPlayer} value={buttonText} ></input>
+              <input
+                type="button"
+                onClick={clearPlayer}
+                value={buttonText}
+              ></input>
             </div>
           </>
         )}
