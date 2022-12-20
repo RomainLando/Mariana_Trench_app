@@ -23,7 +23,7 @@ export default function PlayerInfoForm({addPlayer}) {
     <form onSubmit={handleSubmit}>
         <h4>Ready to explore?</h4>
         <div className="player">
-          <label htmlFor="name">What is your name?</label>
+          <label htmlFor="name">What is your name Captain?</label>
           <input
             type="text"
             id="name"
