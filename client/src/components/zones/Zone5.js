@@ -4,14 +4,18 @@ import "./Zone5.css";
 import TrenchServices from "../../services/TrenchServices";
 import InfoDisplayPopUp from "../InfoDisplayPopup";
 import StaticInfoDisplayPopUp from "../StaticInfoDisplayPopup";
-import sub from "../../media/submarine.png";
-import waste from "../../media/icons/plastic_waste_icon.png";
-import ship from "../../media/icons/shipwreck_icon.png";
-import trieste from "../../media/icons/trieste_icon.png";
-import snailfish from "../../media/icons/snailfish_icon.png";
-import dumbo from "../../media/icons/dumbo_octopus_icon.png";
-import combjelly from "../../media/icons/combjelly_icon.png";
-import grenadier from "../../media/icons/Grenadier_icon.png";
+
+import sub from "../../media/submarine.png"
+import waste from "../../media/icons/plastic_waste_icon.png"
+import ship from "../../media/icons/shipwreck_icon.png"
+import trieste from "../../media/icons/trieste_icon.png"
+import snailfish from "../../media/icons/snailfish_icon.png"
+import dumbo from "../../media/icons/dumbo_octopus_icon.png"
+import combjelly from "../../media/icons/combjelly_icon.png"
+import grenadier from "../../media/icons/Grenadier_icon.png"
+import up from "../../media/icons/up_icon.png"
+
+
 
 export default function Zone5({ player }) {
   const [isOpen0, setIsOpen0] = useState(true);
@@ -71,10 +75,14 @@ export default function Zone5({ player }) {
   return (
     <>
       <div className="background5">
-        <h4>Hadalpelagic Zone - The Trenches</h4>
-        <div id="up-down">
+
+        <h2 id="zone5_title">Hadalpelagic Zone - The Trenches</h2>
+      <div className="up-down">
+
           <Link to="/zone4">
-            <button>Up</button>
+          <button>
+          <img className="upImg" src={up}></img>
+          </button>
           </Link>
         </div>
         <div>
@@ -196,6 +204,14 @@ export default function Zone5({ player }) {
         </div>
         <img className="sub" src={sub}></img>
       </div>
+
+    <div className="quizButton">
+          <Link to="/quiz"><button>Take a quiz!</button></Link>
+    </div>
+      <img className="sub" src={sub}></img>
+    </div>
+    
+
     </>
   );
 }

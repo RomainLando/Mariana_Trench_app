@@ -10,6 +10,8 @@ import lancet from "../../media/icons/lancet_fish_icon.png";
 import cuttlefish from "../../media/icons/cuttlefish_icon.png";
 import wolfeel from "../../media/icons/wolf_eel_icon.png";
 import viperfish from "../../media/icons/viperfish_icon.png";
+import up from "../../media/icons/up_icon.png";
+import down from "../../media/icons/down_icon.png";
 
 export default function Zone2({ player }) {
   const [isOpen0, setIsOpen0] = useState(true);
@@ -58,13 +60,17 @@ export default function Zone2({ player }) {
 
   return (
     <div className="background2">
-      <h4>Mesopelagic Zone - The Twilight Zone</h4>
-      <div id="up-down">
+      <h2 className="zone_title">Mesopelagic Zone - The Twilight Zone</h2>
+      <div className="up-down">
         <Link to="/zone1">
-          <button>Up</button>
+          <button>
+          <img className="upImg"src={up}></img>
+          </button>
         </Link>
         <Link to="/zone3">
-          <button>Down</button>
+        <button>
+          <img className="upImg"src={down}></img>
+          </button>
         </Link>
       </div>
       <div>
@@ -118,47 +124,49 @@ export default function Zone2({ player }) {
           />
         )}
       </div>
-      <div className="element_container2">
-        <div>
-          <button className="element2" onClick={togglePopup1}>
-            <img className="element_img2" src={scuba}></img>
-          </button>
-          {isOpen1 && (
-            <InfoDisplayPopUp content={data[0]} handleClose={togglePopup1} />
-          )}
-        </div>
-        <div>
-          <button className="element2" onClick={togglePopup2}>
-            <img className="element_img" src={lancet}></img>
-          </button>
-          {isOpen2 && (
-            <InfoDisplayPopUp content={data[1]} handleClose={togglePopup2} />
-          )}
-        </div>
-        <div>
-          <button className="element2" onClick={togglePopup3}>
-            <img className="element_img" src={cuttlefish}></img>
-          </button>
-          {isOpen3 && (
-            <InfoDisplayPopUp content={data[2]} handleClose={togglePopup3} />
-          )}
-        </div>
-        <div>
-          <button className="element2" onClick={togglePopup4}>
-            <img className="element_img" src={wolfeel}></img>
-          </button>
-          {isOpen4 && (
-            <InfoDisplayPopUp content={data[3]} handleClose={togglePopup4} />
-          )}
-        </div>
-        <div>
-          <button className="element2" onClick={togglePopup5}>
-            <img className="element_img" src={viperfish}></img>
-          </button>
-          {isOpen5 && (
-            <InfoDisplayPopUp content={data[4]} handleClose={togglePopup5} />
-          )}
-        </div>
+
+      <div className="element_container">
+      <div>
+        <button className="element" onClick={togglePopup1}>
+          <img className="element_img" src={scuba}></img>
+        </button>
+        {isOpen1 && (
+          <InfoDisplayPopUp content={data[0]} handleClose={togglePopup1} />
+        )}
+      </div>
+      <div>
+        <button className="element" onClick={togglePopup2}>
+          <img className="element_img" src={lancet}></img>
+        </button>
+        {isOpen2 && (
+          <InfoDisplayPopUp content={data[1]} handleClose={togglePopup2} />
+        )}
+      </div>
+      <div>
+        <button className="element" onClick={togglePopup3}>
+          <img className="element_img" src={cuttlefish}></img>
+        </button>
+        {isOpen3 && (
+          <InfoDisplayPopUp content={data[2]} handleClose={togglePopup3} />
+        )}
+      </div>
+      <div>
+        <button className="element" onClick={togglePopup4}>
+          <img className="element_img" src={wolfeel}></img>
+        </button>
+        {isOpen4 && (
+          <InfoDisplayPopUp content={data[3]} handleClose={togglePopup4} />
+        )}
+      </div>
+      <div>
+        <button className="element" onClick={togglePopup5}>
+          <img className="element_img" src={viperfish}></img>
+        </button>
+        {isOpen5 && (
+          <InfoDisplayPopUp content={data[4]} handleClose={togglePopup5} />
+        )}
+      </div>
+
       </div>
       <img className="sub" src={sub}></img>
       {/* <img id='ripple1' className='ripple' src='./media/underwater_ripple.png'></img>

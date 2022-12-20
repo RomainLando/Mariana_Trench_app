@@ -1,3 +1,4 @@
+
 import React, {useState, useEffect} from 'react'
 import './PlayerInfoForm.css'
 
@@ -57,4 +58,5 @@ export default function PlayerInfoForm({addPlayer}) {
       </form>
     </div>
   );
+
 }

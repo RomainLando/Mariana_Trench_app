@@ -8,7 +8,6 @@ import sub from "../media/submarine.png";
 export default function MainMenu({ createPlayer, clearPlayer, player }) {
   const buttonText =
     "Wait!  I'm not " + player.name + " or my height is wrong!";
-
   return (
     <>
       <div id="cloud1"></div>
@@ -37,6 +36,7 @@ export default function MainMenu({ createPlayer, clearPlayer, player }) {
               >
                 {buttonText}
               </button>
+
             </div>
           </>
         )}
