@@ -217,7 +217,7 @@ db.questions.insertMany([
       },
       
       {
-        question: "In what sea was the deepest scuba dive ever completed",
+        question: "In what sea was the deepest scuba dive ever completed?",
         answerOptions: [ 
           {option: "The Red Sea", isTrue: true},
           {option: "The Irish Sea", isTrue: false},

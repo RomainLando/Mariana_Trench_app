@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './QuizList.css'
 
 const QuizList = ({ questions, randIndex, handleClick, score, qTracker }) => {
     if (!questions.length) return null;
@@ -20,13 +20,16 @@ const QuizList = ({ questions, randIndex, handleClick, score, qTracker }) => {
                 ) : (<div>
                     
 
-                    <section>
+                    <section id='QuizContainer'>
                         <h3>{questions[randIndex[qTracker]].question}</h3>
                         {questions[randIndex[qTracker]].answerOptions.map((option, index) => {
                             return (
-                                <button key={index} onClick={() => { handleClick(option.isTrue) }}>
-                                    {option.option}
-                                </button>
+                                
+                                    <button key={index} onClick={() => { handleClick(option.isTrue) }}>
+                                        {option.option}
+                                    </button>
+
+                                
                             )
                         }
 

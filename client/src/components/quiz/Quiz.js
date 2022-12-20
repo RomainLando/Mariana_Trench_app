@@ -3,6 +3,9 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import QuestionServices from '../../services/QuestionsServices'
 import QuizList from './QuizList';
+import './Quiz.css'
+
+
 
 export default function Quiz() {
   const [questions, setQuestions] = useState([]);
@@ -25,20 +28,20 @@ export default function Quiz() {
           if (arr.indexOf(candidateInt) === -1) arr.push(candidateInt)
         }
         setRandomQuestionsIndex(arr)
-         
+
       })
 
 
   }, []);
-  
-  
+
+
   const updateCounter = () => {
-    if (qTracker < 4){
-      let count = qTracker+1;
+    if (qTracker < 4) {
+      let count = qTracker + 1;
       setQtracker(count);
 
     }
-    
+
   }
 
   const handleClick = (value) => {
@@ -49,21 +52,29 @@ export default function Quiz() {
     }
   }
 
-  
+
 
   return (
-    <div>
-      <h4>Quiz</h4>
-      <QuizList 
-      questions={questions} 
-      randIndex = {randomQuestionsIndex} 
-      setScore ={setScore} 
-      setShowScore = {setShowScore}
-      handleClick = {handleClick}
-      showScore = {showScore}
-      score = {score}
-      qTracker = {qTracker}
-      />
+    <div className='QuizOverallContainer'>
+      <div id='QuizListDiv'>
+        <QuizList
+          id='QuizList'
+          questions={questions}
+          randIndex={randomQuestionsIndex}
+          setScore={setScore}
+          setShowScore={setShowScore}
+          handleClick={handleClick}
+          showScore={showScore}
+          score={score}
+          qTracker={qTracker}
+        />
+
+
+      </div>
+
+
+
+   
     </div>
 
   )

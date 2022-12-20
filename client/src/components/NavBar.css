@@ -7,7 +7,8 @@
 }
 
 #navbuttons > a > button {
-    width: 20vw;
+    width: max-content;
+    padding: 10px;
     font-size: 30px;
     background-color: #F1AC54;
     border-color: #89673a;
