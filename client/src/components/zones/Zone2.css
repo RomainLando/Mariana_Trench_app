@@ -110,6 +110,33 @@
     padding-top: 10%;
     margin: 0;
   }
+
+.element_container2 {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  /* background-color: red; */
+  margin-left: 10vw;
+  margin-right: 10vw;
+  align-items: center;
+  gap: 5%;
+  justify-content: center;
+}
+
+.element2{
+  background-color: transparent;
+  padding: 0%;
+  border: 0;
+  margin: 5%;
+}
+
+.element_img2 {
+  max-width: 80%;
+
+}
+
+
+
   
   
   

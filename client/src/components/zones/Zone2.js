@@ -85,17 +85,17 @@ export default function Zone2() {
           />
         )}
       </div>
-      <div className="element_container">
+      <div className="element_container2">
       <div>
-        <button className="element" onClick={togglePopup1}>
-          <img className="element_img" src={scuba}></img>
+        <button className="element2" onClick={togglePopup1}>
+          <img className="element_img2" src={scuba}></img>
         </button>
         {isOpen1 && (
           <InfoDisplayPopUp content={data[0]} handleClose={togglePopup1} />
         )}
       </div>
       <div>
-        <button className="element" onClick={togglePopup2}>
+        <button className="element2" onClick={togglePopup2}>
           <img className="element_img" src={lancet}></img>
         </button>
         {isOpen2 && (
@@ -103,7 +103,7 @@ export default function Zone2() {
         )}
       </div>
       <div>
-        <button className="element" onClick={togglePopup3}>
+        <button className="element2" onClick={togglePopup3}>
           <img className="element_img" src={cuttlefish}></img>
         </button>
         {isOpen3 && (
@@ -111,7 +111,7 @@ export default function Zone2() {
         )}
       </div>
       <div>
-        <button className="element" onClick={togglePopup4}>
+        <button className="element2" onClick={togglePopup4}>
           <img className="element_img" src={wolfeel}></img>
         </button>
         {isOpen4 && (
@@ -119,7 +119,7 @@ export default function Zone2() {
         )}
       </div>
       <div>
-        <button className="element" onClick={togglePopup5}>
+        <button className="element2" onClick={togglePopup5}>
           <img className="element_img" src={viperfish}></img>
         </button>
         {isOpen5 && (
