@@ -5,6 +5,12 @@ import TrenchServices from "../../services/TrenchServices";
 import InfoDisplayPopUp from "../InfoDisplayPopup";
 import StaticInfoDisplayPopUp from "../StaticInfoDisplayPopup";
 import sub from "../../media/submarine.png"
+import spam from "../../media/icons/spam_tin_icon.png"
+import squid from "../../media/icons/giant_squid_icon.png"
+import spider from "../../media/icons/sea_spider_icon.png"
+import seaPig from "../../media/icons/sea_pig_icon.png"
+import star from "../../media/icons/echinoderms_icon.png"
+
 
 export default function Zone4() {
   const [isOpen0, setIsOpen0] = useState(true);
@@ -81,31 +87,41 @@ export default function Zone4() {
         )}
       </div>
       <div>
-        <input type="button" value="Element1" onClick={togglePopup1} />
+        <button className="element1" onClick={togglePopup1}>
+          <img className="element_img" src={spam}></img>
+        </button>
         {isOpen1 && (
           <InfoDisplayPopUp content={data[0]} handleClose={togglePopup1} />
         )}
       </div>
       <div>
-        <input type="button" value="Element2" onClick={togglePopup2} />
+        <button className="element2" onClick={togglePopup2}>
+          <img className="element_img" src={squid}></img>
+        </button>
         {isOpen2 && (
           <InfoDisplayPopUp content={data[1]} handleClose={togglePopup2} />
         )}
       </div>
       <div>
-        <input type="button" value="Element3" onClick={togglePopup3} />
+        <button className="element3" onClick={togglePopup3}>
+          <img className="element_img" src={spider}></img>
+        </button>
         {isOpen3 && (
           <InfoDisplayPopUp content={data[2]} handleClose={togglePopup3} />
         )}
       </div>
       <div>
-        <input type="button" value="Element4" onClick={togglePopup4} />
+        <button className="element4" onClick={togglePopup4}>
+          <img className="element_img" src={seaPig}></img>
+        </button>
         {isOpen4 && (
           <InfoDisplayPopUp content={data[3]} handleClose={togglePopup4} />
         )}
       </div>
       <div>
-        <input type="button" value="Element5" onClick={togglePopup5} />
+        <button className="element3" onClick={togglePopup5}>
+          <img className="element_img" src={star}></img>
+        </button>
         {isOpen5 && (
           <InfoDisplayPopUp content={data[4]} handleClose={togglePopup5} />
         )}
