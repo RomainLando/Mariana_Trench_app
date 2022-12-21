@@ -74,7 +74,7 @@ export default function Zone5({player}) {
   return (
     <>
       <div className="background5">
-        <h2 id="zone5_title">Hadalpelagic Zone - The Trenches</h2>
+        <h2 className="zone_title5">Hadalpelagic Zone - The Trenches</h2>
         <div className="up-down">
         <Link to="/zone4">
           <button className="zone_button">
