@@ -58,8 +58,4 @@ export default function PlayerInfoForm({addPlayer}) {
       </form>
     </div>
   );
-<<<<<<< HEAD
-=======
-
->>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
 }

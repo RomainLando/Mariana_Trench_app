@@ -4,10 +4,6 @@ import "./Zone5.css";
 import TrenchServices from "../../services/TrenchServices";
 import InfoDisplayPopUp from "../InfoDisplayPopup";
 import StaticInfoDisplayPopUp from "../StaticInfoDisplayPopup";
-<<<<<<< HEAD
-=======
-
->>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
 import sub from "../../media/submarine.png"
 import waste from "../../media/icons/plastic_waste_icon.png"
 import ship from "../../media/icons/shipwreck_icon.png"
@@ -17,13 +13,8 @@ import dumbo from "../../media/icons/dumbo_octopus_icon.png"
 import combjelly from "../../media/icons/combjelly_icon.png"
 import grenadier from "../../media/icons/Grenadier_icon.png"
 import up from "../../media/icons/up_icon.png"
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
-
-export default function Zone5() {
+export default function Zone5({player}) {
   
   const [isOpen0, setIsOpen0] = useState(true);
   const [isOpen1, setIsOpen1] = useState(false);
@@ -82,15 +73,8 @@ export default function Zone5() {
   return (
     <>
       <div className="background5">
-<<<<<<< HEAD
         <h2 id="zone5_title">Hadalpelagic Zone - The Trenches</h2>
       <div className="up-down">
-=======
-
-        <h2 id="zone5_title">Hadalpelagic Zone - The Trenches</h2>
-      <div className="up-down">
-
->>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
           <Link to="/zone4">
           <button>
           <img className="upImg" src={up}></img>
@@ -164,7 +148,6 @@ export default function Zone5() {
           <InfoDisplayPopUp content={data[0]} handleClose={togglePopup1} />
         )}
       </div>
-<<<<<<< HEAD
       <div className="element_container5"></div>
       <div>
         <button className="element5" onClick={togglePopup2}>
@@ -218,16 +201,13 @@ export default function Zone5() {
       <img className="sub" src={sub}></img>
     </div>
     
-=======
 
     <div className="quizButton">
           <Link to="/quiz"><button>Take a quiz!</button></Link>
     </div>
+    <div>
       <img className="sub" src={sub}></img>
     </div>
-    
-
->>>>>>> 08268b088c5f92a80ff7695c352a8595115de453
     </>
   );
 }
