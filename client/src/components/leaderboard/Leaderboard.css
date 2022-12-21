@@ -16,3 +16,11 @@
 
 }
 
+
+#leaderboard_title_header {
+    margin-top: 5vh;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    align-self: center;
+}
