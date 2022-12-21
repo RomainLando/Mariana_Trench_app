@@ -8,7 +8,9 @@
 
 
 body {
-    background-color: lightblue;
+    /* background-color: lightblue; */
+    background: lightblue;
+    background: linear-gradient(-30deg, lightblue 0%, #54d3d7 10%, #67f2f9 62%, 80% blue, blue 100%);;
 }
 
 *{

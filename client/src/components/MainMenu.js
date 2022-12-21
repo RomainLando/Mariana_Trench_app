@@ -41,15 +41,21 @@ export default function MainMenu({ createPlayer, clearPlayer, player }) {
           </>
         )}
       </div>
-      <div>
-      <img id="sub1" src={sub}></img>
+      <div id='sea_test'>
+      <div id='sub_wave_container'>
+      <div id='sub_parent'>
+        <img id="sub1" src={sub}></img>
+      </div>
       <section id="wavewrapper">
         <div id="wave1"></div>
-        <div id="footer"></div>
-        <div id="wave2"></div>
+        <div id="wave5"></div>
         <div id="wave3"></div>
         <div id="wave4"></div>
       </section>
+
+      </div>
+      <div id='sea_bottom'></div>
+      
 
       </div>
     </>
