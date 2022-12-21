@@ -7,7 +7,7 @@ import cuttlefish from '../../media/icons/cuttlefish_icon.png'
 import whiteShark from '../../media/icons/white_shark_icon.png'
 import barry from '../../media/icons/zone_info_bary_icon.png'
 
-export default function LeaderboardItems({name, score, index}) {
+export default function LeaderboardItems({name, score, index, id, deleteLeaderboard, removeLeaderboard }) {
 
   // const handleDeleteClick = function (e) {
   //   deleteLeaderboard(e.target.value);
@@ -22,7 +22,6 @@ export default function LeaderboardItems({name, score, index}) {
     {
       rank: "Jellyfish",
       url: manOWar
-
     },
     {
       rank: "Lancet Fish",
@@ -42,6 +41,14 @@ export default function LeaderboardItems({name, score, index}) {
     }
   ]
 
+
+  const handleDeleteClick = function (e) {
+    deleteLeaderboard(e.target.value);
+    removeLeaderboard(e.target.value);
+    
+
+}
+
   return (
         <div id='leaderboard_row_item'>
           <h4>{index+1}. {name}</h4>
@@ -51,6 +58,7 @@ export default function LeaderboardItems({name, score, index}) {
             <img id="rank_image" src={scoreRank[score].url} alt={scoreRank[score].rank}></img>
           </div>
             <p>You scored {score}/5!</p>
+            <button id='delete-button' value={id} onClick={handleDeleteClick} >Delete</button>
 
         </div>
         

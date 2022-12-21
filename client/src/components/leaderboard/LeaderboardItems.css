@@ -11,7 +11,8 @@
 
 #leaderboard_row_item {
     padding: 10px;
-    border: solid 3px rgb(0, 132, 255);
+    border: solid 3px #00CF97;
+    border-radius: 20px;
     width: 250px;
     height: 215px;
     display: flex;
@@ -23,4 +24,11 @@
 #rank_image {
     width: 100px;
     align-self: center;
+}
+
+#delete-button {
+    width: 60%;
+    align-self: center;
+    background-color: #00CF97;
+    border-color: #006349;
 }
