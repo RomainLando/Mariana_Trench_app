@@ -42,30 +42,35 @@
   margin-right: 10vw;
   align-items: center;
   gap: 0%;
-  justify-content:left;
+  justify-content:flex-end;
 }
 
 .element5{
   background-color: transparent;
-  padding: 1%;
+  padding: 5%;
   border: 0;
-  margin: 0%;
+  margin: 5%;
+  padding-left: 0;
+  padding-right: 0;
+  width: max-content;
 }
 
 .element_img5 {
-  max-width: 30%;
+  max-width: 35%;
 }
 .quizButton > a > button {
   width: max-content;
-  border: red sold 2px;
+  
   padding: 10px;
   font-size: 30px;
-  background-color: orangered;
-  border-color: #89673a;
+  background-color: #00cf97;
+  border-color: #006349;
   border-radius: 60px;
+  border-width: 3px;
 }
 .quizButton {
-align-content: center;
+align-items: center;
+flex-direction: column;
 display:flex;
 font-size: 40px;
 max-height: 90%;
@@ -73,7 +78,8 @@ border-radius: 60px;
 padding: 10px;
 width: max-content;
 border-radius: 60px;
-background-color: rgb(185, 185, 17);
+margin: auto;
+/* background-color: rgb(185, 185, 17); */
 }
 
  
