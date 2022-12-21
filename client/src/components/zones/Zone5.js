@@ -13,6 +13,7 @@ import dumbo from "../../media/icons/dumbo_octopus_icon.png"
 import combjelly from "../../media/icons/combjelly_icon.png"
 import grenadier from "../../media/icons/Grenadier_icon.png"
 import up from "../../media/icons/up_icon.png"
+import bary from "../../media/icons/zone_info_bary_icon.png"
 
 export default function Zone5({player}) {
   
@@ -80,13 +81,11 @@ export default function Zone5({player}) {
           <img className="upImg" src={up}></img>
           </button>
           </Link>
+          <button className="bary" onClick={togglePopup0}>
+        <img src={bary}></img>
+        </button>
         </div>
         <div>
-          <input
-            type="button"
-            value="Zone Information"
-            onClick={togglePopup0}
-          />
           {isOpen0 && (
             <StaticInfoDisplayPopUp
               content={
