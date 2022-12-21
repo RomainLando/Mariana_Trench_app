@@ -196,17 +196,17 @@ export default function Zone5({player}) {
           <InfoDisplayPopUp content={data[6]} handleClose={togglePopup7} />
         )}
       </div>
+
+      </div>
+      <div className="quizButton">
+          <Link to="/quiz"><button>Take a quiz!</button></Link>
       </div>
       <img className="sub" src={sub}></img>
     </div>
     
 
-    <div className="quizButton">
-          <Link to="/quiz"><button>Take a quiz!</button></Link>
-    </div>
-    <div>
-      <img className="sub" src={sub}></img>
-    </div>
+ 
+
     </>
   );
 }
