@@ -5,7 +5,7 @@ import manOWar from '../../media/icons/man_o_war_icon.png'
 import lancetFish from '../../media/icons/lancet_fish_icon.png'
 import cuttlefish from '../../media/icons/cuttlefish_icon.png'
 import whiteShark from '../../media/icons/white_shark_icon.png'
-import giantSquid from '../../media/icons/giant_squid_icon.png'
+import barry from '../../media/icons/zone_info_bary_icon.png'
 
 export default function LeaderboardItems({name, score, index}) {
 
@@ -37,16 +37,17 @@ export default function LeaderboardItems({name, score, index}) {
       url: whiteShark
     },
     {
-      rank: "Giant Squid",
-      url: giantSquid
+      rank: "Barry",
+      url: barry
     }
   ]
 
   return (
         <div id='leaderboard_row_item'>
-          <h4>{name}</h4>
+          <h4>{index+1}. {name}</h4>
           <div id="rank_image_container">
             <p>You achieved the rank of {scoreRank[score].rank}</p>
+            <br></br>
             <img id="rank_image" src={scoreRank[score].url} alt={scoreRank[score].rank}></img>
           </div>
             <p>You scored {score}/5!</p>
