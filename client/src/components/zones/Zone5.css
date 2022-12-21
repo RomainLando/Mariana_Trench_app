@@ -24,13 +24,16 @@
   
   
   
-  #zone5_title {
+  .zone_title5 {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     color: #a9b31f;
-    padding-top: 2%;
-    margin: 0;
+    padding-top: 0%;
+    margin: 5%;
+    margin-top: 0;
+    padding-top: 10px;
   }
+
 .up-down {
   display:flex;
   margin-left: 5%;
