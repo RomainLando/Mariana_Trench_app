@@ -13,10 +13,16 @@ export default function Leaderboard() {
 
   },[])
 
+  
+
   return (
     <div id='leaderboard_container'>
       <h4>Quiz Results</h4>
-      <LeaderboardContainer leaderboards = {leaderboard} />
+      <LeaderboardContainer 
+      leaderboards = {leaderboard} 
+        
+      
+      />
 
     </div>
   )

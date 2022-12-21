@@ -206,9 +206,9 @@ db.questions.insertMany([
       {
         question: "What is the name of the railway tunnel that links Britain and France?",
         answerOptions: [ 
-          {option: "The Channel Tunnel", isTrue: true},
           {option: "The Brexit Hole", isTrue: false},
           {option: "The Silk Road", isTrue: false},
+          {option: "The Channel Tunnel", isTrue: true},
           {option: "The Bucket and Shovel Express", isTrue: false}
          ],
         answer: "The Channel Tunnel",
@@ -219,8 +219,8 @@ db.questions.insertMany([
       {
         question: "In what sea was the deepest scuba dive ever completed?",
         answerOptions: [ 
-          {option: "The Red Sea", isTrue: true},
           {option: "The Irish Sea", isTrue: false},
+          {option: "The Red Sea", isTrue: true},
           {option: "Loch Ness", isTrue: false},
           {option: "My Bath Tub", isTrue: false}
          ],
@@ -231,10 +231,10 @@ db.questions.insertMany([
         
         question: "The deepest submarine power cable in the world connects Italy with which island?",
         answerOptions: [ 
-          {option: "Sardinia", isTrue: true},
           {option: "Sicily", isTrue: false},
           {option: "Cyprus", isTrue: false},
-          {option: "UK", isTrue: false}
+          {option: "UK", isTrue: false},
+          {option: "Sardinia", isTrue: true}
          ],
         answer: "Sardinia",
         options: ["Sardina", "Sicily", "Cyprus", "UK"]
@@ -254,8 +254,8 @@ db.questions.insertMany([
       {
         question: "What canned food item was found 5km down in the Mariana Trench?",
         answerOptions: [ 
-          {option: "Spam", isTrue: true},
           {option: "Beans", isTrue: false},
+          {option: "Spam", isTrue: true},
           {option: "Alphabetti Spaghetti", isTrue: false},
           {option: "Macaroni Cheese", isTrue: false}
          ],
@@ -265,8 +265,8 @@ db.questions.insertMany([
       {
         question: "What is the name of the deepest shipwreck ever discovered?",
         answerOptions: [ 
-          {option: "U.S.S Samuel B Roberts", isTrue: true},
           {option: "HMS Dougal", isTrue: false},
+          {option: "U.S.S Samuel B Roberts", isTrue: true},
           {option: "Lady Partridge", isTrue: false},
           {option: "Titanic", isTrue: false}
          ],
@@ -276,10 +276,10 @@ db.questions.insertMany([
       {
         question: "What is the name of the deepest point in the Mariana Trench?",
         answerOptions: [ 
-          {option: "The Challenger Deep", isTrue: true},
           {option: "In Too Deep", isTrue: false},
           {option: "Sunk41", isTrue: false},
-          {option: "Mad Deep", isTrue: false}
+          {option: "Mad Deep", isTrue: false},
+          {option: "The Challenger Deep", isTrue: true}
          ],
         answer: "The Challenger Deep",
         options: ["The Challenger Deep", "In Too Deep", "Sunk41", "Mad Deep"]
@@ -291,7 +291,7 @@ db.leaderboard.insertMany(
   [
     {
       userName: "Rory",
-      score: 5
+      score: 3
     },
     {
       userName: "Gintare",
@@ -299,14 +299,24 @@ db.leaderboard.insertMany(
     },
     {
       userName: "Romain",
-      score: 5,
+      score: 4,
     },
     {
       userName: "Ewan",
-      score: 5,
+      score: 2,
+    },
+    {
+      userName: "Barry",
+      score: 1,
     }
   ]
   )
+
+  db.leaderboard.aggregate(
+    [
+      { $sort : { score : 1} }
+    ]
+ )
 
 
 

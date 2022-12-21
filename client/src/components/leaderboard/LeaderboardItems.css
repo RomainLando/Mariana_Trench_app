@@ -2,3 +2,25 @@
     border-bottom: rgba(0, 179, 255, 0.502) solid 3px;
     padding: 10px;
 }
+
+#rank_image_container{
+    display:flex;
+    flex-direction: column;
+
+}
+
+#leaderboard_row_item {
+    padding: 10px;
+    border: solid 3px rgb(0, 132, 255);
+    width: 250px;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#rank_image {
+    width: 100px;
+    align-self: center;
+}
