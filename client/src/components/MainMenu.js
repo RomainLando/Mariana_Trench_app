@@ -41,6 +41,7 @@ export default function MainMenu({ createPlayer, clearPlayer, player }) {
           </>
         )}
       </div>
+      <div>
       <img id="sub1" src={sub}></img>
       <section id="wavewrapper">
         <div id="wave1"></div>
@@ -49,6 +50,8 @@ export default function MainMenu({ createPlayer, clearPlayer, player }) {
         <div id="wave3"></div>
         <div id="wave4"></div>
       </section>
+
+      </div>
     </>
   );
 }
