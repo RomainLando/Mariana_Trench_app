@@ -12,6 +12,7 @@ import seaPig from "../../media/icons/sea_pig_icon.png";
 import star from "../../media/icons/echinoderms_icon.png";
 import up from "../../media/icons/up_icon.png";
 import down from "../../media/icons/down_icon.png";
+import bary from "../../media/icons/zone_info_bary_icon.png";
 
 export default function Zone4({ player }) {
   const [isOpen0, setIsOpen0] = useState(true);
@@ -71,9 +72,12 @@ export default function Zone4({ player }) {
           <img className="upImg" src={down}></img>
         </button>
         </Link>
+        <button className="bary" onClick={togglePopup0}>
+        <img src={bary}></img>
+        </button>
       </div>
       <div>
-        <input type="button" value="Zone Information" onClick={togglePopup0} />
+      
         {isOpen0 && (
           <StaticInfoDisplayPopUp
             content={
