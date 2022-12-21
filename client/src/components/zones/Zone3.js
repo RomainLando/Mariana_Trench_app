@@ -4,13 +4,15 @@ import "./Zone3.css";
 import TrenchServices from "../../services/TrenchServices";
 import InfoDisplayPopUp from "../InfoDisplayPopup";
 import StaticInfoDisplayPopUp from "../StaticInfoDisplayPopup";
-import sub from "../../media/submarine.png";
-import titanic from "../../media/icons/titanic_icon.png";
-import worm from "../../media/icons/zombie_worm_icon.png";
-import shark from "../../media/icons/white_shark_icon.png";
-import cable from "../../media/icons/undersea_cable_icon.png";
-import anglerFish from "../../media/icons/angler_fish_icon.png";
-import benthocodon from "../../media/icons/benthocodon_jellyfish_icon.png";
+import sub from "../../media/submarine.png"
+import titanic from "../../media/icons/titanic_icon.png"
+import worm from "../../media/icons/zombie_worm_icon.png"
+import shark from "../../media/icons/white_shark_icon.png"
+import cable from "../../media/icons/undersea_cable_icon.png"
+import anglerFish from "../../media/icons/angler_fish_icon.png"
+import benthocodon from "../../media/icons/benthocodon_jellyfish_icon.png"
+import up from "../../media/icons/up_icon.png";
+import down from "../../media/icons/down_icon.png";
 
 export default function Zone3({ player }) {
   const [isOpen0, setIsOpen0] = useState(true);
@@ -63,14 +65,18 @@ export default function Zone3({ player }) {
   };
 
   return (
-    <div className="background3">
-      <h4>Bathypelagic Zone - The Midnight Zone</h4>
-      <div id="up-down">
+    <div className='background3'>
+      <h2 className="zone_title">Bathypelagic Zone - The Midnight Zone</h2>
+      <div className="up-down">
         <Link to="/zone2">
-          <button>Up</button>
+          <button>
+          <img className="upImg" src={up}></img>
+          </button>
         </Link>
         <Link to="/zone4">
-          <button>Down</button>
+        <button>
+          <img className="upImg" src={down}></img>
+          </button>
         </Link>
       </div>
       <div>
@@ -124,10 +130,10 @@ export default function Zone3({ player }) {
             handleClose={togglePopup0}
           />
         )}
-      </div>
-      <div className="element_container3">
+        </div>
+        <div className="element_container">
         <div>
-          <button className="element3" onClick={togglePopup1}>
+          <button className="element" onClick={togglePopup1}>
             <img className="element_img" src={cable}></img>
           </button>
           {isOpen1 && (
@@ -135,7 +141,7 @@ export default function Zone3({ player }) {
           )}
         </div>
         <div>
-          <button className="element3" onClick={togglePopup2}>
+          <button className="element" onClick={togglePopup2}>
             <img className="element_img" src={anglerFish}></img>
           </button>
           {isOpen2 && (
@@ -143,16 +149,16 @@ export default function Zone3({ player }) {
           )}
         </div>
         <div>
-          <button className="element3" onClick={togglePopup3}>
-            <img className="element_img" src={benthocodon}></img>
-          </button>
-          {isOpen3 && (
-            <InfoDisplayPopUp content={data[2]} handleClose={togglePopup3} />
-          )}
-        </div>
-
+            <button className="element" onClick={togglePopup3}>
+              <img className="element_img" src={benthocodon}></img>
+            </button>
+            {isOpen3 && (
+              <InfoDisplayPopUp content={data[2]} handleClose={togglePopup3} />
+            )}
+          </div>
+         
         <div>
-          <button className="element3" onClick={togglePopup4}>
+          <button className="element" onClick={togglePopup4}>
             <img className="element_img" src={shark}></img>
           </button>
           {isOpen4 && (
@@ -160,7 +166,7 @@ export default function Zone3({ player }) {
           )}
         </div>
         <div>
-          <button className="element3" onClick={togglePopup5}>
+          <button className="element" onClick={togglePopup5}>
             <img className="element_img" src={worm}></img>
           </button>
           {isOpen5 && (
@@ -168,7 +174,7 @@ export default function Zone3({ player }) {
           )}
         </div>
         <div>
-          <button className="element3" onClick={togglePopup6}>
+          <button className="element" onClick={togglePopup6}>
             <img className="element_img" src={titanic}></img>
           </button>
           {isOpen6 && (

@@ -1,5 +1,5 @@
 .background5 {
-    background-color: #03989E;
+    background-color: #002331;
    
   
   }
@@ -24,13 +24,26 @@
   
   
   
-  #zone-title {
+  #zone5_title {
     text-align: center;
     font-size: 40px;
     color: #a9b31f;
-    padding-top: 10%;
+    padding-top: 2%;
     margin: 0;
   }
+.up-down {
+  display:flex;
+  margin-left: 5%;
+  border: 10%;
+  max-height: 5%;
+  max-width: 6%;
+
+}
+
+.upImg {
+  background-color: transparent;
+  max-width: 50%;
+}
 
 .element_container5 {
   display: flex;
@@ -40,20 +53,62 @@
   margin-left: 10vw;
   margin-right: 10vw;
   align-items: center;
-  gap: 5%;
+  gap: 0%;
   justify-content:left;
 }
 
 .element5{
   background-color: transparent;
-  padding: 10%;
+  padding: 1%;
   border: 0;
-  margin: 5%;
+  margin: 0%;
 }
 
 .element_img5 {
-  max-width: 50%;
+  max-width: 30%;
 }
+.quizButton > a > button {
+  width: max-content;
+  border: red sold 2px;
+  padding: 10px;
+  font-size: 30px;
+  background-color: orangered;
+  border-color: #89673a;
+  border-radius: 60px;
+}
+.quizButton {
+align-content: center;
+display:flex;
+font-size: 40px;
+max-height: 90%;
+border-radius: 60px;
+padding: 10px;
+width: max-content;
+border-radius: 60px;
+background-color: rgb(185, 185, 17);
+}
+
+ 
+ 
+ 
+
+  
+
+
+
+
+/* .quizButton {
+  /* width: max-content; */
+  /* padding: 10px;
+  font-size: 40px;
+  background: fixed;
+  border-color: #89673a;
+  color: red;
+  
+  display: flex;
+  justify-content: center;
+  border-radius: 60px; */
+
 
   
   

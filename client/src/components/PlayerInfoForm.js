@@ -1,4 +1,6 @@
+
 import React, {useState, useEffect} from 'react'
+import './PlayerInfoForm.css'
 
 export default function PlayerInfoForm({addPlayer}) {
 
@@ -20,10 +22,14 @@ export default function PlayerInfoForm({addPlayer}) {
 
   return (
     <div>
-    <form onSubmit={handleSubmit}>
-        <h4>Ready to explore?</h4>
-        <div className="player">
-          <label htmlFor="name">What is your name?</label>
+    <form id="info_form" onSubmit={handleSubmit}>
+        <h4 id="formheader">Ready to Explore?</h4>
+        <br></br>
+        <p id="formheader">Enter your info below to begin your submarine journey!</p>
+        <br></br>
+        <ul class="form-wrapper">
+                    <li class="form-row">
+          <label htmlFor="name">What is your name Captain?</label>
           <input
             type="text"
             id="name"
@@ -32,8 +38,8 @@ export default function PlayerInfoForm({addPlayer}) {
             required
             onChange={handlePlayerNameChange}
           />
-        </div>
-        <div className="player">
+        </li>
+        <li class="form-row">
           <label htmlFor="height">How tall are you?</label>
           <input
             type="number"
@@ -44,8 +50,11 @@ export default function PlayerInfoForm({addPlayer}) {
             required
             onChange={handlePlayerHeightChange}
           />
-        </div>
-        <input type="submit" name="submit" value="Submit" />
+        </li>
+        <li class="form-row">
+        <button type="submit">Let's Dive!</button>
+        </li>
+        </ul>
       </form>
     </div>
   );

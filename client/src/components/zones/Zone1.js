@@ -10,6 +10,8 @@ import zooplankton from "../../media/icons/zooplankton_icon.png";
 import coral from "../../media/icons/brain_coral_icon.png";
 import jelly from "../../media/icons/man_o_war_icon.png";
 import shark from "../../media/icons/blue_shark_icon.png";
+import down from "../../media/icons/down_icon.png";
+
 
 export default function Zone1({ player }) {
   const [isOpen0, setIsOpen0] = useState(true);
@@ -58,10 +60,12 @@ export default function Zone1({ player }) {
 
   return (
     <div className="background1">
-      <h2 id="zone-title">Epipalagic Zone - The Sunlight Zone</h2>
-      <div id="up-down">
+      <h2 className="zone-title">Epipalagic Zone - The Sunlight Zone</h2>
+      <div className="up-down">
         <Link to="/zone2">
-          <button>Down</button>
+          <button>
+          <img className="upImg" src={down}></img>
+          </button>
         </Link>
       </div>
       <div>

@@ -8,29 +8,35 @@ import sub from "../media/submarine.png";
 export default function MainMenu({ createPlayer, clearPlayer, player }) {
   const buttonText =
     "Wait!  I'm not " + player.name + " or my height is wrong!";
-
   return (
     <>
       <div id="cloud1"></div>
-      <h4>Main Menu</h4>
+      <h1 id="header">Welcome to the Mariana Trench Explorer</h1>
       <div id="info">
         {!player.name ? (
           <PlayerInfoForm addPlayer={createPlayer} />
         ) : (
           <>
-            <div>Welcome Captain {player.name}! </div>
+            <h3>Welcome Captain {player.name}! </h3>
+            <br></br>
             <div>You entered your height as {player.height}cm!</div>
+            <br></br>
             <div>
               <Link to="/zone1">
-                <button>Lets explore!</button>
+                <button className="landingbutton" id="go">
+                  Let's explore! Dive Dive Dive!
+                </button>
               </Link>
             </div>
             <div>
-              <input
-                type="button"
+              <button
+                className="landingbutton"
+                id="clear"
                 onClick={clearPlayer}
-                value={buttonText}
-              ></input>
+              >
+                {buttonText}
+              </button>
+
             </div>
           </>
         )}
