@@ -25,13 +25,12 @@ export default function Leaderboard() {
 
   return (
     <div id='leaderboard_container'>
-      <h4>Quiz Results</h4>
+      <h4 id='leaderboard_title_header'>Leaderboard</h4>
       <LeaderboardContainer 
       leaderboards = {leaderboard} 
       removeLeaderboard = {removeLeaderboard}
       deleteLeaderboard = {deleteLeaderboard}
         
-      
       />
 
     </div>
