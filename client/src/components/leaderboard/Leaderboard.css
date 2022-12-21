@@ -7,15 +7,11 @@
 
 #leaderboard_container {
     
-    /* background: #d754ad;
-    background: -webkit-linear-gradient(120deg, #546ed7 0%, #5491d7 10%, #67f9bc 62%, #33febe 100%);
-    background: linear-gradient(-30deg, #546ed7 0%, #5491d7 10%, #67f9bc 62%, #33febe 100%); */
-    width: 45%;
+
     text-align: center;
-    /* display: flex;
-    flex-direction: column; */
-    padding: 10vh 20px;
-    margin: auto;
+    padding: 10px 20px;
+    /* margin: auto; */
+    background-color: rgb(103, 185, 211);
     
 
 }

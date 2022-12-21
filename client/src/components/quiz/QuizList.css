@@ -3,24 +3,27 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 5vw;
+
 
 }
 
 #QuizContainer > h3 {
     align-self: center;
     align-items: center;
-    font-size: 45px;
+    font-size: 30px;
     padding-left: 5vw;
     padding-right: 5vw;
     text-align: center;
+    width: 100%;
     
 }
 
 #QuizContainer > button {
     width: 45vw;
     padding: 5vw;
-    font-size: 1.75em;
+    font-size: 20px;
     height: 10rem;
     border-radius: 20px;
     background-color: #00CF97;
