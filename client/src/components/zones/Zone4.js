@@ -63,19 +63,19 @@ export default function Zone4({ player }) {
       <h2 className="zone_title4">Abyssopelagic Zone - The Abyss</h2>
       <div className="up-down">
         <Link to="/zone3">
-          <button>
-          <img className="upImg" src={up}></img>
+          <button className="zone_button">
+          Go Up 
           </button>
         </Link>
         <Link to="/zone5">
-        <button>
-          <img className="upImg" src={down}></img>
-        </button>
+        <button className="zone_button">
+          Go Down
+          </button>
         </Link>
-        <button className="bary" onClick={togglePopup0}>
-        <img src={bary}></img>
+        <button className="zone_button" onClick={togglePopup0}>
+        Zone Info
         </button>
-      </div>
+      </div>  
       <div>
       
         {isOpen0 && (
