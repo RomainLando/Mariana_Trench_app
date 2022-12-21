@@ -75,16 +75,16 @@ export default function Zone5({player}) {
     <>
       <div className="background5">
         <h2 id="zone5_title">Hadalpelagic Zone - The Trenches</h2>
-      <div className="up-down">
-          <Link to="/zone4">
-          <button>
-          <img className="upImg" src={up}></img>
+        <div className="up-down">
+        <Link to="/zone4">
+          <button className="zone_button">
+          Go Up 
           </button>
-          </Link>
-          <button className="bary" onClick={togglePopup0}>
-        <img src={bary}></img>
+        </Link>
+        <button className="zone_button" onClick={togglePopup0}>
+        Zone Info
         </button>
-        </div>
+      </div>  
         <div>
           {isOpen0 && (
             <StaticInfoDisplayPopUp

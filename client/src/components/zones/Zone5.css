@@ -31,19 +31,19 @@
     padding-top: 2%;
     margin: 0;
   }
-.up-down {
+/* .up-down {
   display:flex;
   margin-left: 5%;
   border: 10%;
   max-height: 5%;
   max-width: 6%;
 
-}
-
+} */
+/* 
 .upImg {
   background-color: transparent;
   max-width: 50%;
-}
+} */
 
 .element_container5 {
   display: flex;

@@ -134,18 +134,3 @@
   .element_img {
     max-width: 50%;
   }
-  .up-down {
-    display:flex;
-    margin-left: 5%;
-    border: 10%;
-    max-height: 5%;
-    max-width: 6%;
-  
-  }
-  
-  .upImg {
-    background-color: transparent;
-    max-width: 50%;
-  }
-  
-    

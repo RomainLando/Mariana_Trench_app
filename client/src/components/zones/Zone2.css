@@ -121,7 +121,6 @@
   align-items:flex-start;
   gap: 0%;
   /* justify-content:flex-start; */
-  
 }
 
 .element{
@@ -136,16 +135,29 @@
 }
 .up-down {
   display:flex;
-  margin-left: 5%;
-  border: 10%;
-  max-height: 5%;
-  max-width: 6%;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 2%;
+  margin-bottom: 5%;
+}
 
+.zone_button {
+  border: 0;
+  /* width: 8rem; */
+  /* height: 7rem; */
+  padding: 0.5rem;
+  border: 3px solid darkblue;
+  color: black;
+  background-color: lightblue;
 }
 
 .upImg {
-  background-color: transparent;
-  max-width: 50%;
+  width: 2rem;
+  height: 2rem;
+  padding: 5%;
+  margin-bottom: 5%;
 }
 
   
