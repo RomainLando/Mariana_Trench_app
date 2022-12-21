@@ -14,17 +14,13 @@ export default function Quiz({player}) {
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [qTracker, setQtracker] = useState(0);
-  const [test, setTest] = useState(0);
-  const [test2, setTest2] = useState(false);
 
 
 
   useEffect(() => {
     QuestionServices.getQuestions()
-      .then(res => setQuestions(res));
-    QuestionServices.getQuestions()
       .then(res => {
-        const ques = [...questions]
+        const ques = [...res]
         const arr = []
         const max = res.length
         while (arr.length < 6) {
@@ -32,8 +28,8 @@ export default function Quiz({player}) {
           if (arr.indexOf(candidateInt) === -1) arr.push(candidateInt)
         }
         setRandomQuestionsIndex(arr)
+        setQuestions(res)});
 
-      })
 
 
   }, []);
@@ -59,31 +55,7 @@ export default function Quiz({player}) {
     }
   }
 
-  const checkEnd = () => {
-    if (!test2){
-      const payload = {}
-      if(player.name ){
-        payload["userName"] = player.name;
-      }
-      else if (!player.name){
-        payload["userName"] = "Guest";
-      }
-      payload["score"] = score;
-     
-      postLeaderboard(payload).then((data) => {
-        setTest(data);
-        
-
-
-    })
-
-    }
-    const newVal = true;
-    setTest2(newVal)
-    
-
-    
-  }
+  
 
 
 
@@ -100,7 +72,8 @@ export default function Quiz({player}) {
           showScore={showScore}
           score={score}
           qTracker={qTracker}
-          checkEnd ={checkEnd}
+          player ={player}
+          postLeaderboard = {postLeaderboard}
         />
 
 

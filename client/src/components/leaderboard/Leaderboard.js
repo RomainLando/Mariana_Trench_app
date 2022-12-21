@@ -7,9 +7,11 @@ export default function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([])
 
   useEffect(()=>{
-    getLeaderboard().then((data) => {
-      setLeaderboard(data)
-    })
+    getLeaderboard()
+      .then((data) => {
+        setLeaderboard(data)
+      }
+    )
 
   },[])
 
