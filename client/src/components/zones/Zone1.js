@@ -61,7 +61,7 @@ export default function Zone1({ player }) {
 
   return (
     <div className="background1">
-      <h2 className="zone-title">Epipalagic Zone - The Sunlight Zone</h2>
+      <h2 className="zone_title1">Epipalagic Zone - The Sunlight Zone</h2>
       <div className="up-down">
         <Link to="/zone2">
         <button className="zone_button">

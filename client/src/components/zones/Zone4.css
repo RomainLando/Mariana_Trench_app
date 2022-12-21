@@ -109,13 +109,15 @@
 }
 
 
-#zone_title {
+.zone_title4 {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     color: #a9b31f;
-    padding-top: 2%;
-    margin: 0;
-}
+    padding-top: 0%;
+    margin: 5%;
+    margin-top: 0;
+    padding-top: 10px;
+  }
 
 
 .element_container {

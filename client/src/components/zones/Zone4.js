@@ -60,7 +60,7 @@ export default function Zone4({ player }) {
   };
   return (
     <div className="background4">
-      <h2 id="zone_title">Abyssopelagic Zone - The Abyss</h2>
+      <h2 className="zone_title4">Abyssopelagic Zone - The Abyss</h2>
       <div className="up-down">
         <Link to="/zone3">
           <button className="zone_button">

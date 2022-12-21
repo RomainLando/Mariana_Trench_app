@@ -11,8 +11,16 @@
     text-align: center;
     padding: 10px 20px;
     /* margin: auto; */
-    background-color: rgb(103, 185, 211);
+    background-color: lightblue;
     
 
 }
 
+
+#leaderboard_title_header {
+    margin-top: 5vh;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    align-self: center;
+}
