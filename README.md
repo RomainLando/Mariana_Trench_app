@@ -1,25 +1,24 @@
-MARIANA TRENCH EDUCATIONAL APP.
+## Mariana Trench Educational App - Project Brief
 
-THE BBC are looking to improve their online offering of educational content by developing some interactive browsers application to display information in a fun and interesting way. 
+The BBC are looking to improve their online offering of educational content by developing an interactive browser application to display information in a fun and interesting way.
 
-MVP
+# MVP
 
-* Navigate through different sections of content
-* Display multimedia information on various things that user might find on their journey
+* User should be able to navigate through different sections of content
+* App should display multimedia information on things the user might find on their journey
 * Interactive background
 * Tablet responsive
 * Depth gauge in meters
-* Use of Mongosh database and Express backend framework
+* Use of MongoDB database and Express backend framework
 
-
-EXTENSIONS
+# EXTENSIONS
 
 * Make it mobile responsive
 * Ocean sounds effects
-* A quiz at the bottom of the sea
+* A quiz when the user reaches the bottom
 * Pressure and temperature readouts for particular depths
-* Form for user to add their name, height at the begging of their journey so that we can create depth gauge based on their height
-* Quiz high score/Last score? Leaderboard
+* Form for the user to add their name, height at the beginning of their journey, so that we can create depth gauge based on their height
+* Quiz High Score Leaderboard
 * Animations
 * Quiz between levels to allow user to progress deeper
 * Different size buildings to compare the depth
